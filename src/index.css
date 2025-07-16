@@ -1,4 +1,7 @@
-* {
+@import "tailwindcss";
+
+/* <<< RATING COMPONENT >>> */
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,6 +26,11 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.rating-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .stars {
   display: flex;
   justify-content: center;
@@ -45,10 +53,10 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
-}
+} */
 
 /* Submit Button */
-.submit-btn {
+/* .submit-btn {
   margin-top: 15px;
   padding: 10px 15px;
   font-size: 1rem;
@@ -67,10 +75,10 @@ body {
 
 .submit-btn:hover:not(:disabled) {
   background-color: #0056b3;
-}
+} */
 
 /* Modal Styling */
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -108,4 +116,11 @@ body {
 
 .close-btn:hover {
   background-color: darkred;
+} */
+/* <<< RATING COMPONENT >>> */
+
+/* <<< NOTES APP >>> */
+body {
+  @apply bg-purple-900;
 }
+/* <<< NOTES APP >>> */
