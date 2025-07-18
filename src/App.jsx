@@ -9,8 +9,13 @@
 // <<< NOTES APP >>>
 
 // <<< TIMER COMPONENT >>>
-import Timer from "./components/Timer";
+// import Timer from "./components/Timer";
 // <<< TIMER COMPONENT >>>
+
+// <<< SHOPPING CART >>>
+import Header from "./components/Header";
+import ProductList from "./components/ProductList";
+// <<< SHOPPING CART >>>
 
 const App = () => {
   // <<< NOTES APP >>>
@@ -34,6 +39,10 @@ const App = () => {
   //   }
   // };
   // <<< NOTES APP >>>
+
+  // <<< SHOPPING CART >>>
+
+  // <<< SHOPPING CART >>>
 
   return (
     // <<< RATING COMPONENT >>>
@@ -61,10 +70,20 @@ const App = () => {
     // <<< NOTES APP >>>
 
     // <<< TIMER COMPONENT >>>
-    <div className="mx-auto mt-10 max-w-md rounded-lg bg-gray-100 p-6 text-center shadow-lg">
-      <Timer />
-    </div>
+    // <div className="mx-auto mt-10 max-w-md rounded-lg bg-gray-100 p-6 text-center shadow-lg">
+    //   <Timer />
+    // </div>
     // <<< TIMER COMPONENT >>>
+
+    // <<< SHOPPING CART >>>
+    <>
+      <Header />
+      <div className="min-h-screen bg-gray-100 p-6">
+        <h1 className="mb-6 text-3xl font-bold">🛒 Product Catalog</h1>
+        <ProductList />
+      </div>
+    </>
+    // <<< SHOPPING CART >>>
   );
 };
 
