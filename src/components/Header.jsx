@@ -29,7 +29,7 @@ const Header = () => {
         </button>
 
         {showDropdown && (
-          <div className="absolute right-0 z-50 mt-2 w-80 rounded border bg-white shadow-lg">
+          <div className="absolute right-0 z-50 mt-2 w-60 rounded border bg-white shadow-lg sm:w-80">
             <div className="p-4">
               <h2 className="mb-2 text-lg font-semibold">Cart Items</h2>
               {cart.length === 0 ? (
@@ -43,7 +43,9 @@ const Header = () => {
                         className="flex items-center justify-between py-2"
                       >
                         <div>
-                          <p className="font-semibold">{item.name}</p>
+                          <p className="text-sm font-semibold sm:text-base">
+                            {item.name}
+                          </p>
                           <p className="text-sm text-gray-500">
                             {item.qty} x ${item.price}
                           </p>
@@ -51,7 +53,7 @@ const Header = () => {
 
                         <button
                           onClick={() => removeFromCart(item.id)}
-                          className="text-sm text-red-500 hover:underline"
+                          className="cursor-pointer text-xs text-red-500 hover:underline sm:text-sm"
                         >
                           Remove
                         </button>
@@ -66,7 +68,7 @@ const Header = () => {
 
                   <button
                     onClick={clearCart}
-                    className="mt-3 w-full rounded bg-red-500 py-1 text-white transition hover:bg-red-600"
+                    className="mt-3 w-full cursor-pointer rounded bg-red-500 py-1 text-white transition hover:bg-red-600"
                   >
                     Clear cart
                   </button>
