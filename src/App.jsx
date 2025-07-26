@@ -1,3 +1,7 @@
+import { Routes, Route } from "react-router";
+import HomePage from "./pages/home";
+import ShoppingCardPage from "./pages/shoppingCart";
+
 // <<< RATING COMPONENT >>>
 // import Rating from "./components/Rating";
 // <<< RATING COMPONENT >>>
@@ -11,11 +15,6 @@
 // <<< TIMER COMPONENT >>>
 // import Timer from "./components/Timer";
 // <<< TIMER COMPONENT >>>
-
-// <<< SHOPPING CART >>>
-import Header from "./components/Header";
-import ProductList from "./components/ProductList";
-// <<< SHOPPING CART >>>
 
 const App = () => {
   // <<< NOTES APP >>>
@@ -75,15 +74,10 @@ const App = () => {
     // </div>
     // <<< TIMER COMPONENT >>>
 
-    // <<< SHOPPING CART >>>
-    <>
-      <Header />
-      <div className="min-h-screen bg-gray-100 p-6">
-        <h1 className="mb-6 text-3xl font-bold">🛒 Product Catalog</h1>
-        <ProductList />
-      </div>
-    </>
-    // <<< SHOPPING CART >>>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/shopping-card" element={<ShoppingCardPage />} />
+    </Routes>
   );
 };
 
