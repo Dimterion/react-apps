@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/home";
-import ShoppingCardPage from "./pages/shoppingCart";
+import ShoppingCartPage from "./pages/shopping-cart";
+import NotFoundPage from "./pages/not-found"
 
 // <<< RATING COMPONENT >>>
 // import Rating from "./components/Rating";
@@ -76,7 +77,8 @@ const App = () => {
 
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/shopping-card" element={<ShoppingCardPage />} />
+      <Route path="/shopping-cart" element={<ShoppingCartPage />} />
+        <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };

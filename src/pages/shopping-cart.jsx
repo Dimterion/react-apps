@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import ProductList from "../components/ProductList";
 
-const ShoppingCardPage = () => {
+const ShoppingCartPage = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const ShoppingCardPage = () => {
   );
 };
 
-export default ShoppingCardPage;
+export default ShoppingCartPage;

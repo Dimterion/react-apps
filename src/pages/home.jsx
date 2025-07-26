@@ -1,5 +1,12 @@
+import { Link } from "react-router";
+
 const HomePage = () => {
-  return <>Home Page</>;
+  return (
+    <>
+      <h1>React Apps</h1>
+      <Link to="/shopping-cart">Shopping Cart</Link>
+    </>
+  );
 };
 
 export default HomePage;
