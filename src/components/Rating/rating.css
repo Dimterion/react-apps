@@ -1,4 +1,5 @@
 .rating-container {
+  margin: 30vh auto;
   text-align: center;
   padding: 40px 30px;
   border: 1px solid #ddd;
@@ -6,6 +7,13 @@
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 300px) {
+  .rating-container {
+    padding: 20px 15px;
+    max-width: 95vw;
+  }
 }
 
 .rating-container h2 {
