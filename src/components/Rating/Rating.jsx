@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Star from "../Star";
-import Modal from "../Modal";
 import Button from "../Button";
+import Modal from "../Modal";
 import "./rating.css";
 
 const Rating = ({

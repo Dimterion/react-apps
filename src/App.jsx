@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/home";
 import ShoppingCartPage from "./pages/shopping-cart";
-import NotesAppPage from "./pages/notes-app";
-import NotFoundPage from "./pages/not-found";
+import NotesAppPage from "./pages/notes-app/notes-app";
 import RatingPage from "./pages/rating";
 import TimerPage from "./pages/timer";
+import NotFoundPage from "./pages/not-found";
 
 const App = () => {
   return (

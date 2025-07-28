@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import NoteForm from "../components/NoteForm";
-import NoteList from "../components/NoteList";
+import NoteForm from "../../components/NoteForm";
+import NoteList from "../../components/NoteList";
+import "./notes-app.css";
 
 const NotesAppPage = () => {
   const [notes, setNotes] = useState(() => {
