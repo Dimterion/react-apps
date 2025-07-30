@@ -5,6 +5,7 @@ const TextInput = ({ label, name, value, onChange, required = false }) => {
         {label}
       </label>
       <input
+        id={name}
         name={name}
         type="text"
         className="w-full rounded-lg border p-2"

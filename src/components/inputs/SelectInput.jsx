@@ -5,6 +5,7 @@ const SelectInput = ({ label, name, value, onChange, options }) => {
         {label}
       </label>
       <select
+        id={name}
         name={name}
         className="w-full rounded-lg border p-2"
         value={value}

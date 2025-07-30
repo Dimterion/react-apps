@@ -5,6 +5,7 @@ const TextAreaInput = ({ label, name, value, onChange, required = false }) => {
         {label}
       </label>
       <textarea
+        id={name}
         name={name}
         className="w-full rounded-lg border p-2"
         value={value}

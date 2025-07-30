@@ -25,7 +25,7 @@ const NotesAppPage = () => {
   };
 
   return (
-    <div className="mx-auto mt-10 max-w-lg rounded-lg bg-gray-100 p-6 shadow-md">
+    <div className="mx-auto mt-10 max-w-[90vw] rounded-lg bg-gray-100 p-6 shadow-md sm:max-w-lg">
       <h2 className="mb-4 text-center text-2xl font-bold">📝 Notes App</h2>
 
       <NoteForm notes={notes} setNotes={setNotes} />

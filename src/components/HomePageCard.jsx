@@ -4,9 +4,13 @@ const HomePageCard = ({ link, title }) => {
   return (
     <Link
       to={link}
-      className="flex h-30 w-30 items-center justify-center rounded border p-4 text-center shadow-md hover:shadow-lg"
+      className="relative h-[80px] w-40 bg-gray-500 hover:opacity-90"
     >
-      {title}
+      <div className="absolute bottom-full border-r-[80px] border-b-[40px] border-l-[80px] border-transparent border-b-gray-500"></div>
+      <p className="flex h-[80px] items-center justify-center text-gray-100">
+        {title}
+      </p>
+      <div className="absolute top-full border-t-[40px] border-r-[80px] border-l-[80px] border-transparent border-t-gray-500"></div>
     </Link>
   );
 };
