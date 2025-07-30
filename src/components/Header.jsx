@@ -6,7 +6,7 @@ const Header = () => {
       <Link to="/" className="text-xl font-bold">
         React Apps
       </Link>
-      <nav className="flex flex-wrap gap-2">
+      <nav className="flex flex-wrap gap-3 text-sm sm:text-base justify-center">
         <Link to="/" className="hover:text-gray-500">
           Home
         </Link>
