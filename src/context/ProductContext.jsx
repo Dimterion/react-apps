@@ -15,10 +15,13 @@ export function ProductProvider({ children }) {
       try {
         const res = await fetch("/api/products");
 
-        if (res.ok) {
+        if (
+          res.ok &&
+          res.headers.get("content-type")?.includes("application/json")
+        ) {
           data = await res.json();
         } else {
-          console.warn("API returned non-OK response, using local data.");
+          console.warn("Could not fetch, using local data.");
           data = localData?.products ?? [];
         }
       } catch (err) {
