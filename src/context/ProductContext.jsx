@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import localData from "../data/db.json";
 
 const ProductContext = createContext();
 
@@ -9,14 +10,23 @@ export function ProductProvider({ children }) {
 
   useEffect(() => {
     const fetchProducts = async () => {
+      let data;
+
       try {
         const res = await fetch("/api/products");
-        if (!res.ok) throw new Error("Could not fetch products");
-        const data = await res.json();
-        setProducts(data);
+
+        if (res.ok) {
+          data = await res.json();
+        } else {
+          console.warn("API returned non-OK response, using local data.");
+          data = localData?.products ?? [];
+        }
       } catch (err) {
+        console.error("Fetch threw an error:", err.message);
         setError(err.message);
+        data = localData?.products ?? [];
       } finally {
+        setProducts(data);
         setLoading(false);
       }
     };
