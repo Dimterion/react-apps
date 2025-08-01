@@ -2,7 +2,7 @@ import Rating from "../components/Rating/Rating";
 
 const RatingPage = () => {
   return (
-    <div className="rating-container">
+    <main className="rating-container">
       <Rating
         heading="How do you feel?"
         feedbackMessages={[
@@ -13,7 +13,7 @@ const RatingPage = () => {
           "Top of the world",
         ]}
       />
-    </div>
+    </main>
   );
 };
 
