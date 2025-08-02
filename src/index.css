@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+/*
+
+ className="flex min-h-screen flex-col items-center justify-center bg-gray-100"
+
+*/
+
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
