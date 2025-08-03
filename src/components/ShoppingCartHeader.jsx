@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { useCart } from "../context/CartContext";
 
-const Header = () => {
+const ShoppingCartHeader = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef(null);
 
   const { cart, removeFromCart, clearCart } = useCart();
   const itemCount = cart.reduce((acc, item) => acc + item.qty, 0);
@@ -11,11 +12,26 @@ const Header = () => {
     .reduce((acc, item) => acc + item.price * item.qty, 0)
     .toFixed(2);
 
+  // Close cart when clicked outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className="flex items-center justify-between bg-white p-4 shadow-md">
       <h1 className="text-2xl font-bold text-blue-600">Shop App</h1>
 
-      <div className="relative">
+      <div className="relative" ref={dropdownRef}>
         <button
           className="cursor-pointer"
           onClick={() => setShowDropdown(!showDropdown)}
@@ -82,4 +98,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ShoppingCartHeader;
