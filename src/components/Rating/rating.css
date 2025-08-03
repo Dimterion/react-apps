@@ -5,7 +5,7 @@
   border: 1px solid #ddd;
   width: 400px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #f9fafb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,7 +82,7 @@
 }
 
 .modal {
-  background: white;
+  background: #f9fafb;
   padding: 20px;
   text-align: center;
   border-radius: 10px;

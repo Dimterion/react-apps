@@ -25,12 +25,12 @@ const NotesAppPage = () => {
   };
 
   return (
-    <div className="mx-auto mt-10 w-md max-w-[90vw] rounded-lg bg-gray-100 p-6 shadow-md">
+    <main className="mx-auto mt-10 w-md max-w-[90vw] rounded-lg bg-gray-50 p-6 shadow-md">
       <h2 className="mb-4 text-center text-2xl font-bold">📝 Notes App</h2>
 
       <NoteForm notes={notes} setNotes={setNotes} />
       <NoteList notes={notes} deleteNote={deleteNote} />
-    </div>
+    </main>
   );
 };
 

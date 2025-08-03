@@ -28,12 +28,12 @@ const ShoppingCartHeader = () => {
   }, []);
 
   return (
-    <header className="flex items-center justify-between bg-white p-4 shadow-md">
+    <header className="flex items-center justify-between bg-gray-50 p-4 shadow-md">
       <h1 className="text-2xl font-bold text-blue-600">Shop App</h1>
 
       <div className="relative" ref={dropdownRef}>
         <button
-          className="cursor-pointer"
+          className="cursor-pointer hover:opacity-90"
           onClick={() => setShowDropdown(!showDropdown)}
         >
           <FaShoppingCart className="text-2xl text-gray-700" />
@@ -45,7 +45,7 @@ const ShoppingCartHeader = () => {
         </button>
 
         {showDropdown && (
-          <div className="absolute right-0 z-50 mt-2 w-60 rounded border bg-white shadow-lg sm:w-80">
+          <div className="absolute right-0 z-50 mt-2 w-60 rounded border bg-gray-50 shadow-lg sm:w-80">
             <div className="p-4">
               <h2 className="mb-2 text-lg font-semibold">Cart Items</h2>
               {cart.length === 0 ? (
