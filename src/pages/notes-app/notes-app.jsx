@@ -22,6 +22,10 @@ const NotesAppPage = () => {
 
     if (confirmDelete) {
       setNotes(notes.filter((note) => note.id !== id));
+
+      if (editNote?.id === id) {
+        setEditNote(null);
+      }
     }
   };
 

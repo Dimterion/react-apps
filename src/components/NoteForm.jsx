@@ -16,6 +16,13 @@ const NoteForm = ({ notes, setNotes, editNote, setEditNote }) => {
     if (editNote) {
       setFormData(editNote);
       setIsFormVisible(true);
+    } else {
+      setFormData({
+        title: "",
+        category: "Work",
+        priority: "Medium",
+        description: "",
+      });
     }
   }, [editNote]);
 
