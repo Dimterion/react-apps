@@ -1,4 +1,4 @@
-const Note = ({ note, deleteNote }) => {
+const Note = ({ note, editNote, deleteNote }) => {
   return (
     <div
       className={`rounded-lg border-l-4 bg-white p-4 shadow-md`}
@@ -22,12 +22,20 @@ const Note = ({ note, deleteNote }) => {
       </p>
       <p className="mt-3">{note.description}</p>
 
-      <button
-        onClick={() => deleteNote(note.id)}
-        className="mt-3 cursor-pointer text-red-500 transition hover:text-red-700"
-      >
-        🗑 Delete
-      </button>
+      <div className="flex justify-between">
+        <button
+          onClick={() => deleteNote(note.id)}
+          className="mt-3 cursor-pointer text-red-500 transition hover:text-red-700"
+        >
+          🗑 Delete
+        </button>
+        <button
+          onClick={() => editNote(note)}
+          className="mt-3 cursor-pointer text-green-500 transition hover:text-green-700"
+        >
+          ✏️ Edit
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TextInput from "./inputs/TextInput";
 import SelectInput from "./inputs/SelectInput";
 import TextAreaInput from "./inputs/TextAreaInput";
 
-const NoteForm = ({ notes, setNotes }) => {
+const NoteForm = ({ notes, setNotes, editNote, setEditNote }) => {
   const [formData, setFormData] = useState({
     title: "",
     category: "Work",
@@ -11,6 +11,13 @@ const NoteForm = ({ notes, setNotes }) => {
     description: "",
   });
   const [isFormVisible, setIsFormVisible] = useState(false);
+
+  useEffect(() => {
+    if (editNote) {
+      setFormData(editNote);
+      setIsFormVisible(true);
+    }
+  }, [editNote]);
 
   const handleChange = (e) => {
     setFormData({
@@ -25,11 +32,19 @@ const NoteForm = ({ notes, setNotes }) => {
     // Validation
     if (!formData.title || !formData.description) return;
 
-    // Create note object
-    const newNote = { id: Date.now(), ...formData };
+    if (editNote) {
+      // Edit note
+      setNotes(
+        notes.map((note) => (note.id === editNote.id ? formData : note)),
+      );
+      setEditNote(null);
+    } else {
+      // Create note object
+      const newNote = { id: Date.now(), ...formData };
 
-    // Add notes to state
-    setNotes([newNote, ...notes]);
+      // Add notes to state
+      setNotes([newNote, ...notes]);
+    }
 
     // Reset form data
     setFormData({
@@ -93,7 +108,7 @@ const NoteForm = ({ notes, setNotes }) => {
           />
 
           <button className="w-full cursor-pointer rounded-lg bg-purple-500 py-2 text-white hover:bg-purple-600">
-            Add Note
+            {editNote ? "Edit Note" : "Add Note"}
           </button>
         </form>
       )}
