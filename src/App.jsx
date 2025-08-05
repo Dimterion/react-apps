@@ -6,6 +6,7 @@ import ShoppingCartPage from "./pages/shopping-cart";
 import NotesAppPage from "./pages/notes-app/notes-app";
 import RatingPage from "./pages/rating";
 import TimerPage from "./pages/timer";
+import NodeInterfacePage from "./pages/node-interface/node-interface";
 import NotFoundPage from "./pages/not-found";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/notes-app" element={<NotesAppPage />} />
         <Route path="/rating" element={<RatingPage />} />
         <Route path="/timer" element={<TimerPage />} />
+        <Route path="/node-interface" element={<NodeInterfacePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

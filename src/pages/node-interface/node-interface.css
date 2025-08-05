@@ -1,0 +1,21 @@
+/*
+
+Colors:
+
+Background (Dark Gray): #1a1a1a to #242424
+
+Lines/Shapes (Light Gray): #b0b0b0 to #e0e0e0
+
+Yellow/Gold: #a87e35 to #c1944e
+
+Red/Orange: #c15f4e to #e3725b
+
+Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
+
+*/
+
+.nodeInterface-main {
+  background: #242424;
+  color: #b0b0b0;
+  min-height: 100vh;
+}
