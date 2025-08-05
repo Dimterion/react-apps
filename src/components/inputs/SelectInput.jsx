@@ -7,7 +7,7 @@ const SelectInput = ({ label, name, value, onChange, options }) => {
       <select
         id={name}
         name={name}
-        className="w-full rounded-lg border p-2"
+        className="w-full cursor-pointer rounded-lg border p-2"
         value={value}
         onChange={onChange}
       >

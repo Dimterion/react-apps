@@ -60,6 +60,8 @@ const NoteForm = ({ notes, setNotes, editNote, setEditNote }) => {
       priority: "Medium",
       description: "",
     });
+
+    setIsFormVisible(false);
   };
 
   return (
