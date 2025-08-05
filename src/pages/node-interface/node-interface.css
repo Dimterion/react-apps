@@ -19,3 +19,127 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   color: #b0b0b0;
   min-height: 100vh;
 }
+
+.hexagon {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: #6f9c6f;
+  margin: 10rem auto;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 50px solid #6f9c6f;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 50px solid #6f9c6f;
+}
+
+.hexagon-inner-1 {
+  position: relative;
+  width: 180px;
+  height: 90px;
+  background-color: #bee2e3;
+  margin: auto;
+  top: 5px;
+}
+
+.hexagon-inner-1::before,
+.hexagon-inner-1::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+}
+
+.hexagon-inner-1::before {
+  bottom: 100%;
+  border-bottom: 45px solid #bee2e3;
+}
+
+.hexagon-inner-1::after {
+  z-index: 1;
+  top: 100%;
+  border-top: 45px solid #bee2e3;
+}
+
+.hexagon-inner-2 {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  background-color: #a0c9a5;
+  margin: auto;
+  top: 10px;
+}
+
+.hexagon-inner-2::before,
+.hexagon-inner-2::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.hexagon-inner-2::before {
+  bottom: 100%;
+  border-bottom: 30px solid #a0c9a5;
+}
+
+.hexagon-inner-2::after {
+  z-index: 2;
+  top: 100%;
+  border-top: 30px solid #a0c9a5;
+}
+
+.hexagon-inner-3 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #5b6c71;
+  margin: auto;
+  top: 5px;
+}
+
+.hexagon-inner-3::before,
+.hexagon-inner-3::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon-inner-3::before {
+  bottom: 100%;
+  border-bottom: 25px solid #5b6c71;
+}
+
+.hexagon-inner-3::after {
+  z-index: 3;
+  top: 100%;
+  border-top: 25px solid #5b6c71;
+}
+
+.circle {
+  position: relative;
+  background-color: #4a585b;
+  border: 1px solid #d1ca91;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  top: 15px;
+  border-radius: 50%;
+}
