@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="mt-6 flex justify-center gap-1 p-1 text-sm text-gray-700">
+    <footer className="flex items-center justify-center gap-1 py-2 text-sm text-gray-700">
       <p>&copy; {new Date().getFullYear()}</p>
       <a
         href="https://www.dimterion.com/"
