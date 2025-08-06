@@ -15,7 +15,21 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 */
 
 .nodeInterface-main {
-  background: #242424;
+  background-image: radial-gradient(
+    circle,
+    #242424,
+    #222222,
+    #202020,
+    #1e1e1e,
+    #1c1c1c,
+    #1b1b1b,
+    #1b1b1b,
+    #1a1a1a,
+    #1a1a1a,
+    #1a1a1a,
+    #1a1a1a,
+    #1a1a1a
+  );
   color: #b0b0b0;
   min-height: 100vh;
 }
@@ -50,7 +64,7 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   position: relative;
   width: 180px;
   height: 90px;
-  background-color: #bee2e3;
+  background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   top: 5px;
 }
@@ -66,20 +80,20 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 
 .hexagon-inner-1::before {
   bottom: 100%;
-  border-bottom: 45px solid #bee2e3;
+  border-bottom: 45px solid rgba(0, 0, 0, 0.7);
 }
 
 .hexagon-inner-1::after {
   z-index: 1;
   top: 100%;
-  border-top: 45px solid #bee2e3;
+  border-top: 45px solid rgba(0, 0, 0, 0.7);
 }
 
 .hexagon-inner-2 {
   position: relative;
   width: 160px;
   height: 80px;
-  background-color: #a0c9a5;
+  background-color: #6f9c6f;
   margin: auto;
   top: 5px;
 }
@@ -95,20 +109,20 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 
 .hexagon-inner-2::before {
   bottom: 100%;
-  border-bottom: 40px solid #a0c9a5;
+  border-bottom: 40px solid #6f9c6f;
 }
 
 .hexagon-inner-2::after {
   z-index: 2;
   top: 100%;
-  border-top: 40px solid #a0c9a5;
+  border-top: 40px solid #6f9c6f;
 }
 
 .hexagon-inner-3 {
   position: relative;
   width: 140px;
   height: 70px;
-  background-color: #5b6c71;
+  background-color: rgba(0, 0, 0, 0.65);
   margin: auto;
   top: 5px;
 }
@@ -124,20 +138,20 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 
 .hexagon-inner-3::before {
   bottom: 100%;
-  border-bottom: 35px solid #5b6c71;
+  border-bottom: 35px solid rgba(0, 0, 0, 0.65);
 }
 
 .hexagon-inner-3::after {
   z-index: 3;
   top: 100%;
-  border-top: 35px solid #5b6c71;
+  border-top: 35px solid rgba(0, 0, 0, 0.65);
 }
 
 .hexagon-inner-4 {
   position: relative;
   width: 120px;
   height: 60px;
-  background-color: #e0e0e0;
+  background-color: rgba(0, 0, 0, 0.25);
   margin: auto;
   top: 5px;
 }
@@ -153,22 +167,51 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 
 .hexagon-inner-4::before {
   bottom: 100%;
-  border-bottom: 30px solid #e0e0e0;
+  border-bottom: 30px solid rgba(0, 0, 0, 0.25);
 }
 
 .hexagon-inner-4::after {
   z-index: 4;
   top: 100%;
-  border-top: 30px solid #e0e0e0;
+  border-top: 30px solid rgba(0, 0, 0, 0.25);
+}
+
+.hexagon-inner-5 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #6f9c6f;
+  margin: auto;
+  top: 5px;
+}
+
+.hexagon-inner-5::before,
+.hexagon-inner-5::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon-inner-5::before {
+  bottom: 100%;
+  border-bottom: 25px solid #6f9c6f;
+}
+
+.hexagon-inner-5::after {
+  z-index: 5;
+  top: 100%;
+  border-top: 25px solid #6f9c6f;
 }
 
 .circle {
   position: relative;
-  background-color: #4a585b;
-  border: 1px solid #d1ca91;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.7);
   width: 20px;
   height: 20px;
   margin: auto;
-  top: 25px;
+  top: 20px;
   border-radius: 50%;
 }

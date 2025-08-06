@@ -8,7 +8,9 @@ const NodeInterfacePage = () => {
           <div className="hexagon-inner-2">
             <div className="hexagon-inner-3">
               <div className="hexagon-inner-4">
-                <div className="circle"></div>
+                <div className="hexagon-inner-5">
+                  <div className="circle"></div>
+                </div>
               </div>
             </div>
           </div>
