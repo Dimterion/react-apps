@@ -33,6 +33,23 @@ const NodeInterfacePage = () => {
           </div>
         </div>
       </div>
+      <div className="terminal terminal-right">
+        <div className="terminal-header">
+          <div className="terminal-circle bg-red-500"></div>
+          <div className="terminal-circle bg-yellow-500"></div>
+          <div className="terminal-circle bg-green-500"></div>
+          <div className="terminal-console">~/dev/unix</div>
+        </div>
+        <div className="terminal-main">
+          <div className="terminal-output"></div>
+          <div className="terminal-output"></div>
+          <div className="terminal-output"></div>
+          <div className="terminal-output"></div>
+          <div className="terminal-output"></div>
+          <div className="terminal-output"></div>
+          <div className="terminal-output"></div>
+        </div>
+      </div>
     </main>
   );
 };

@@ -68,6 +68,10 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   flex-flow: column nowrap;
 }
 
+.terminal-right {
+  margin-left: 40rem;
+}
+
 .terminal-output {
   width: 150px;
   height: 5px;
