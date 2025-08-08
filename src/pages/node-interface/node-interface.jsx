@@ -11,13 +11,13 @@ const NodeInterfacePage = () => {
           <div className="terminal-console">~/dev/unix</div>
         </div>
         <div className="terminal-main">
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
+          <div className="terminal-output bg-green-100"></div>
+          <div className="terminal-output bg-green-200"></div>
+          <div className="terminal-output bg-green-300"></div>
+          <div className="terminal-output bg-green-400"></div>
+          <div className="terminal-output bg-green-500"></div>
+          <div className="terminal-output bg-green-600"></div>
+          <div className="terminal-output bg-green-700"></div>
         </div>
       </div>
       <div className="hexagon">
@@ -41,13 +41,13 @@ const NodeInterfacePage = () => {
           <div className="terminal-console">~/dev/unix</div>
         </div>
         <div className="terminal-main">
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
-          <div className="terminal-output"></div>
+          <div className="terminal-output bg-green-300"></div>
+          <div className="terminal-output bg-green-400"></div>
+          <div className="terminal-output bg-green-500"></div>
+          <div className="terminal-output bg-green-600"></div>
+          <div className="terminal-output bg-green-700"></div>
+          <div className="terminal-output bg-green-800"></div>
+          <div className="terminal-output bg-green-900"></div>
         </div>
       </div>
     </main>

@@ -31,16 +31,21 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
     #1a1a1a
   );
   color: #b0b0b0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5rem 0;
   min-height: 100vh;
 }
 
 .terminal {
+  top: 5rem;
+  margin-left: 1rem;
   background-color: rgba(0, 0, 0, 0.2);
   border: 2px solid #6f9c6f;
   border-radius: 5px;
   height: 150px;
   width: 250px;
-  margin: 10rem;
 }
 
 .terminal-header {
@@ -69,14 +74,13 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 }
 
 .terminal-right {
-  margin-left: 40rem;
+  margin-top: 10rem;
 }
 
 .terminal-output {
   width: 150px;
   height: 5px;
   margin: 5px;
-  background-color: #6f9c6f;
 }
 
 .hexagon {
