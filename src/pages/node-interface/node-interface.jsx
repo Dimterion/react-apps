@@ -20,6 +20,7 @@ const NodeInterfacePage = () => {
           <div className="terminal-output bg-green-700"></div>
         </div>
       </div>
+      <div className="semicircle-top"></div>
       <div className="hexagon">
         <div className="hexagon-inner-1">
           <div className="hexagon-inner-2">
@@ -33,6 +34,8 @@ const NodeInterfacePage = () => {
           </div>
         </div>
       </div>
+      <div className="semicircle-bottom"></div>
+      <div className="outer-circle"></div>
       <div className="terminal terminal-right">
         <div className="terminal-header">
           <div className="terminal-circle bg-red-500"></div>

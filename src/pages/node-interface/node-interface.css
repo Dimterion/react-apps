@@ -15,6 +15,7 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 */
 
 .nodeInterface-main {
+  position: relative;
   background-image: radial-gradient(
     circle,
     #242424,
@@ -263,4 +264,43 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   margin: auto;
   top: 20px;
   border-radius: 50%;
+}
+
+.outer-circle {
+  position: absolute;
+  top: calc(50% - 120px);
+  width: 200px;
+  height: 200px;
+  border: 2px solid #6f9c6f;
+  border-radius: 50%;
+  opacity: 40%;
+  z-index: 6;
+}
+
+.semicircle-top {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  right: 65%;
+  bottom: 65%;
+  border: 2px solid #6f9c6f;
+  border-bottom: none;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+  rotate: -90deg;
+  z-index: 6;
+}
+
+.semicircle-bottom {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  right: 20%;
+  bottom: 35%;
+  border: 2px solid #6f9c6f;
+  border-top: none;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  rotate: -90deg;
+  z-index: 6;
 }
