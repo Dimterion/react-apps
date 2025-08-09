@@ -39,7 +39,7 @@ const Timer = () => {
 
   return (
     <div>
-      <TimerDisplay time={time} />
+      <TimerDisplay time={time} isRunning={isRunning} />
       <TimerControls
         isRunning={isRunning}
         onToggle={toggleTimer}
