@@ -30,6 +30,9 @@
 }
 
 .spin-360 {
-  display: inline-block;
   animation: spin-360 3s ease-in-out infinite;
+}
+
+.stop-spin {
+  animation: none;
 }
