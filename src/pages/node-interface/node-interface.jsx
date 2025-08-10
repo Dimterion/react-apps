@@ -3,6 +3,7 @@ import "./node-interface.css";
 const NodeInterfacePage = () => {
   return (
     <main className="nodeInterface-main">
+      <div className="diamond"></div>
       <div className="terminal">
         <div className="terminal-header">
           <div className="terminal-circle bg-red-500"></div>
@@ -52,6 +53,9 @@ const NodeInterfacePage = () => {
           <div className="terminal-output bg-green-800"></div>
           <div className="terminal-output bg-green-900"></div>
         </div>
+      </div>
+      <div className="circle-outer">
+        <div className="circle-inner"></div>
       </div>
     </main>
   );
