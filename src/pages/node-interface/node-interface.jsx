@@ -4,24 +4,26 @@ const NodeInterfacePage = () => {
   return (
     <main className="nodeInterface-main">
       <div className="diamond"></div>
-      <div className="terminal">
-        <div className="terminal-header">
-          <div className="terminal-circle bg-red-500"></div>
-          <div className="terminal-circle bg-yellow-500"></div>
-          <div className="terminal-circle bg-green-500"></div>
-          <div className="terminal-console">~/dev/unix</div>
-        </div>
-        <div className="terminal-main">
-          <div className="terminal-output bg-green-100"></div>
-          <div className="terminal-output bg-green-200"></div>
-          <div className="terminal-output bg-green-300"></div>
-          <div className="terminal-output bg-green-400"></div>
-          <div className="terminal-output bg-green-500"></div>
-          <div className="terminal-output bg-green-600"></div>
-          <div className="terminal-output bg-green-700"></div>
+      <div className="semicircle-container">
+        <div className="semicircle-top"></div>
+        <div className="terminal">
+          <div className="terminal-header">
+            <div className="terminal-circle bg-red-500"></div>
+            <div className="terminal-circle bg-yellow-500"></div>
+            <div className="terminal-circle bg-green-500"></div>
+            <div className="terminal-console">~/dev/unix</div>
+          </div>
+          <div className="terminal-main">
+            <div className="terminal-output bg-green-100"></div>
+            <div className="terminal-output bg-green-200"></div>
+            <div className="terminal-output bg-green-300"></div>
+            <div className="terminal-output bg-green-400"></div>
+            <div className="terminal-output bg-green-500"></div>
+            <div className="terminal-output bg-green-600"></div>
+            <div className="terminal-output bg-green-700"></div>
+          </div>
         </div>
       </div>
-      <div className="semicircle-top"></div>
       <div className="hexagon">
         <div className="hexagon-inner-1">
           <div className="hexagon-inner-2">
@@ -35,23 +37,25 @@ const NodeInterfacePage = () => {
           </div>
         </div>
       </div>
-      <div className="semicircle-bottom"></div>
       <div className="outer-circle"></div>
-      <div className="terminal terminal-right">
-        <div className="terminal-header">
-          <div className="terminal-circle bg-red-500"></div>
-          <div className="terminal-circle bg-yellow-500"></div>
-          <div className="terminal-circle bg-green-500"></div>
-          <div className="terminal-console">~/dev/unix</div>
-        </div>
-        <div className="terminal-main">
-          <div className="terminal-output bg-green-300"></div>
-          <div className="terminal-output bg-green-400"></div>
-          <div className="terminal-output bg-green-500"></div>
-          <div className="terminal-output bg-green-600"></div>
-          <div className="terminal-output bg-green-700"></div>
-          <div className="terminal-output bg-green-800"></div>
-          <div className="terminal-output bg-green-900"></div>
+      <div className="semicircle-container">
+        <div className="semicircle-bottom"></div>
+        <div className="terminal terminal-right">
+          <div className="terminal-header">
+            <div className="terminal-circle bg-red-500"></div>
+            <div className="terminal-circle bg-yellow-500"></div>
+            <div className="terminal-circle bg-green-500"></div>
+            <div className="terminal-console">~/dev/unix</div>
+          </div>
+          <div className="terminal-main">
+            <div className="terminal-output bg-green-300"></div>
+            <div className="terminal-output bg-green-400"></div>
+            <div className="terminal-output bg-green-500"></div>
+            <div className="terminal-output bg-green-600"></div>
+            <div className="terminal-output bg-green-700"></div>
+            <div className="terminal-output bg-green-800"></div>
+            <div className="terminal-output bg-green-900"></div>
+          </div>
         </div>
       </div>
       <div className="circle-outer">

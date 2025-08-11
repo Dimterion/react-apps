@@ -51,8 +51,8 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
 }
 
 .terminal {
-  top: 5rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  background-color: black;
   border: 2px solid #6f9c6f;
   border-radius: 5px;
   height: 150px;
@@ -101,6 +101,7 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   height: 100px;
   background-color: #6f9c6f;
   margin: 10rem auto 0;
+  z-index: 6;
 }
 
 .hexagon::before,
@@ -288,32 +289,39 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   z-index: 6;
 }
 
+.semicircle-container {
+  position: relative;
+  z-index: 2;
+}
+
 .semicircle-top {
   position: absolute;
+  top: 150px;
+  right: 70px;
   width: 16rem;
   height: 8rem;
-  left: 0;
-  bottom: 75vh;
   border: 2px solid #6f9c6f;
   border-bottom: none;
   border-top-left-radius: 16rem;
   border-top-right-radius: 16rem;
   rotate: -90deg;
   opacity: 50%;
+  z-index: 1;
 }
 
 .semicircle-bottom {
   position: absolute;
+  bottom: 150px;
+  left: 70px;
   width: 16rem;
   height: 8rem;
-  right: 0;
-  bottom: 28vh;
   border: 2px solid #6f9c6f;
   border-top: none;
   border-bottom-left-radius: 16rem;
   border-bottom-right-radius: 16rem;
   rotate: -90deg;
   opacity: 50%;
+  z-index: 1;
 }
 
 .circle-outer {
