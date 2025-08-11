@@ -3,6 +3,10 @@ import "./node-interface.css";
 const NodeInterfacePage = () => {
   return (
     <main className="nodeInterface-main">
+      <div className="circle-diamond">
+        <div className="inner-diamond"></div>
+      </div>
+      <div className="outer-hexagon"></div>
       <div className="diamond"></div>
       <div className="semicircle-container">
         <div className="semicircle-top"></div>
