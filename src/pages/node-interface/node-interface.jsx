@@ -6,8 +6,11 @@ const NodeInterfacePage = () => {
       <div className="circle-diamond">
         <div className="inner-diamond"></div>
       </div>
+
       <div className="outer-hexagon"></div>
+
       <div className="diamond"></div>
+
       <div className="semicircle-container">
         <div className="semicircle-top"></div>
         <div className="terminal">
@@ -28,6 +31,7 @@ const NodeInterfacePage = () => {
           </div>
         </div>
       </div>
+
       <div className="hexagon">
         <div className="hexagon-inner-1">
           <div className="hexagon-inner-2">
@@ -41,7 +45,9 @@ const NodeInterfacePage = () => {
           </div>
         </div>
       </div>
+
       <div className="outer-circle"></div>
+
       <div className="semicircle-container">
         <div className="semicircle-bottom"></div>
         <div className="terminal terminal-right">
@@ -62,6 +68,7 @@ const NodeInterfacePage = () => {
           </div>
         </div>
       </div>
+
       <div className="circle-outer">
         <div className="circle-inner"></div>
       </div>

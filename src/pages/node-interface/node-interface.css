@@ -60,6 +60,35 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   transform: rotate(45);
 }
 
+.outer-hexagon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  width: 2rem;
+  height: 1rem;
+  background-color: #a87e35;
+  opacity: 50%;
+  z-index: 6;
+}
+
+.outer-hexagon::before,
+.outer-hexagon::after {
+  content: "";
+  position: absolute;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+}
+
+.outer-hexagon::before {
+  bottom: 100%;
+  border-bottom: 0.5rem solid #a87e35;
+}
+
+.outer-hexagon::after {
+  top: 100%;
+  border-top: 0.5rem solid #a87e35;
+}
+
 .diamond {
   position: absolute;
   bottom: 1rem;
@@ -69,6 +98,26 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   border: 2px solid #a87e35;
   opacity: 50%;
   rotate: 45deg;
+}
+
+.semicircle-container {
+  position: relative;
+  z-index: 2;
+}
+
+.semicircle-top {
+  position: absolute;
+  top: 150px;
+  right: 70px;
+  width: 16rem;
+  height: 8rem;
+  border: 2px solid #6f9c6f;
+  border-bottom: none;
+  border-top-left-radius: 16rem;
+  border-top-right-radius: 16rem;
+  rotate: -90deg;
+  opacity: 50%;
+  z-index: 1;
 }
 
 .terminal {
@@ -106,43 +155,10 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   flex-flow: column nowrap;
 }
 
-.terminal-right {
-  margin-top: 10rem;
-}
-
 .terminal-output {
   width: 150px;
   height: 5px;
   margin: 5px;
-}
-
-.outer-hexagon {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  width: 2rem;
-  height: 1rem;
-  background-color: #a87e35;
-  opacity: 50%;
-  z-index: 6;
-}
-
-.outer-hexagon::before,
-.outer-hexagon::after {
-  content: "";
-  position: absolute;
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-}
-
-.outer-hexagon::before {
-  bottom: 100%;
-  border-bottom: 0.5rem solid #a87e35;
-}
-
-.outer-hexagon::after {
-  top: 100%;
-  border-top: 0.5rem solid #a87e35;
 }
 
 .hexagon {
@@ -339,26 +355,6 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   z-index: 6;
 }
 
-.semicircle-container {
-  position: relative;
-  z-index: 2;
-}
-
-.semicircle-top {
-  position: absolute;
-  top: 150px;
-  right: 70px;
-  width: 16rem;
-  height: 8rem;
-  border: 2px solid #6f9c6f;
-  border-bottom: none;
-  border-top-left-radius: 16rem;
-  border-top-right-radius: 16rem;
-  rotate: -90deg;
-  opacity: 50%;
-  z-index: 1;
-}
-
 .semicircle-bottom {
   position: absolute;
   bottom: 150px;
@@ -372,6 +368,10 @@ Highlights: #e3725b, #a87e35, #6f9c6f (Muted Green)
   rotate: -90deg;
   opacity: 50%;
   z-index: 1;
+}
+
+.terminal-right {
+  margin-top: 10rem;
 }
 
 .circle-outer {
