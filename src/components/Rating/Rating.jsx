@@ -29,7 +29,7 @@ const Rating = ({
   };
 
   return (
-    <div>
+    <section>
       <h2>{heading}</h2>
       <div className="stars">
         {stars.map((star) => (
@@ -56,7 +56,7 @@ const Rating = ({
       </Button>
 
       <Modal isOpen={submitted} onClose={closeModal} rating={rating} />
-    </div>
+    </section>
   );
 };
 

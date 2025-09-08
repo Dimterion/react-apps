@@ -6,7 +6,7 @@ const NoteList = ({ notes, setEditNote, deleteNote }) => {
   }
 
   return (
-    <div className="space-y-4">
+    <section className="space-y-4">
       {notes.map((note) => (
         <Note
           key={note.id}
@@ -15,7 +15,7 @@ const NoteList = ({ notes, setEditNote, deleteNote }) => {
           deleteNote={deleteNote}
         />
       ))}
-    </div>
+    </section>
   );
 };
 

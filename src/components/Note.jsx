@@ -1,6 +1,6 @@
 const Note = ({ note, editNote, deleteNote }) => {
   return (
-    <div
+    <article
       className={`rounded-lg border-l-4 bg-white p-4 shadow-md`}
       style={{
         borderLeftColor:
@@ -36,7 +36,7 @@ const Note = ({ note, editNote, deleteNote }) => {
           ✏️ Edit
         </button>
       </div>
-    </div>
+    </article>
   );
 };
 

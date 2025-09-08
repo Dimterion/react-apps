@@ -9,7 +9,7 @@ const Header = () => {
       <Link to="/" className="text-xl font-bold">
         React Apps
       </Link>
-      <nav className="flex flex-wrap justify-center gap-3 text-sm sm:text-base">
+      <nav className="flex flex-wrap justify-end gap-3 text-sm sm:text-base">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? active : base)}

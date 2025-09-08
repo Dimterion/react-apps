@@ -38,14 +38,14 @@ const Timer = () => {
   };
 
   return (
-    <div>
+    <section>
       <TimerDisplay time={time} isRunning={isRunning} />
       <TimerControls
         isRunning={isRunning}
         onToggle={toggleTimer}
         onReset={resetTimer}
       />
-    </div>
+    </section>
   );
 };
 
