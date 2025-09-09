@@ -1,4 +1,5 @@
-import QuizCard from "../components/QuizCard/QuizCard";
+import QuizCard from "../../components/QuizCard/QuizCard";
+import "./quiz.css";
 
 const QuizPage = () => {
   const quiz = [
@@ -23,7 +24,7 @@ const QuizPage = () => {
   ];
 
   return (
-    <main>
+    <main className="quizPage-container">
       {quiz.map((q) => (
         <QuizCard key={q.id} question={q.question} answers={q.answers} />
       ))}

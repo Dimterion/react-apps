@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./quizCard.css";
 
-const Quiz = ({ question, answers }) => {
+const QuizCard = ({ question, answers }) => {
   const [result, setResult] = useState();
 
   return (
-    <section>
+    <article className="quizCard-container">
       <h2>{question}</h2>
       {answers.map((answer) => (
         <button
@@ -16,8 +16,8 @@ const Quiz = ({ question, answers }) => {
         </button>
       ))}
       {result && <p>{result.correct ? "Correct" : "Not correct"}</p>}
-    </section>
+    </article>
   );
 };
 
-export default Quiz;
+export default QuizCard;
