@@ -7,6 +7,7 @@ import NotesAppPage from "./pages/notes-app/notes-app";
 import RatingPage from "./pages/rating";
 import TimerPage from "./pages/timer";
 import NodeInterfacePage from "./pages/node-interface/node-interface";
+import QuizPage from "./pages/quiz";
 import NotFoundPage from "./pages/not-found";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/rating" element={<RatingPage />} />
         <Route path="/timer" element={<TimerPage />} />
         <Route path="/node-interface" element={<NodeInterfacePage />} />
+        <Route path="/quiz" element={<QuizPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
