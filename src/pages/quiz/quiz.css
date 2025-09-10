@@ -1,5 +1,10 @@
 .quizPage-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  margin: auto;
+}
+
+.quizPage-container button {
+  border: 2px solid gray;
+  cursor: pointer;
+  margin: 0.25rem;
+  padding: 0.25rem;
 }

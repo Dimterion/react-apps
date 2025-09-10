@@ -1,21 +1,27 @@
-import { useState } from "react";
 import "./quizCard.css";
 
-const QuizCard = ({ question, answers }) => {
-  const [result, setResult] = useState();
-
+const QuizCard = ({
+  question,
+  answers,
+  selectedAnswer,
+  onSelect,
+  showResult,
+}) => {
   return (
     <article className="quizCard-container">
       <h2>{question}</h2>
       {answers.map((answer) => (
         <button
-          key={`${answer}-${answer.id}`}
-          onClick={() => setResult(answer)}
+          key={answer.id}
+          onClick={() => onSelect(answer)}
+          className={selectedAnswer?.id === answer.id ? "selected" : ""}
         >
           {answer.answer}
         </button>
       ))}
-      {result && <p>{result.correct ? "Correct" : "Not correct"}</p>}
+      {showResult && selectedAnswer && (
+        <p>{selectedAnswer.correct ? "Correct" : "Not correct"}</p>
+      )}
     </article>
   );
 };

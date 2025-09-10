@@ -1,3 +1,4 @@
+import { useState } from "react";
 import QuizCard from "../../components/QuizCard/QuizCard";
 import "./quiz.css";
 
@@ -23,11 +24,49 @@ const QuizPage = () => {
     },
   ];
 
+  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSelect = (questionId, answer) => {
+    setSelectedAnswers((prev) => ({
+      ...prev,
+      [questionId]: answer,
+    }));
+  };
+
+  const handleSubmit = () => {
+    if (Object.entries(selectedAnswers).length === quiz.length) {
+      setSubmitted(true);
+      setError(false);
+    } else {
+      setError(true);
+    }
+  };
+
+  const score = Object.entries(selectedAnswers).reduce((acc, [, answer]) => {
+    return answer.correct ? acc + 1 : acc;
+  }, 0);
+
   return (
     <main className="quizPage-container">
       {quiz.map((q) => (
-        <QuizCard key={q.id} question={q.question} answers={q.answers} />
+        <QuizCard
+          key={q.id}
+          question={q.question}
+          answers={q.answers}
+          selectedAnswer={selectedAnswers[q.id]}
+          onSelect={(answer) => handleSelect(q.id, answer)}
+          showResult={submitted}
+        />
       ))}
+      <button onClick={handleSubmit}>Submit</button>
+      {submitted && (
+        <p>
+          Your score: {score} / {quiz.length}
+        </p>
+      )}
+      {error && <p>Please answer all questions.</p>}
     </main>
   );
 };
