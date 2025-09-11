@@ -24,7 +24,15 @@ const QuizCard = ({
         </button>
       ))}
       {showResult && selectedAnswer && (
-        <p>{selectedAnswer.correct ? "Correct" : "Not correct"}</p>
+        <p
+          className={
+            selectedAnswer.correct
+              ? "quizCardResult-green"
+              : "quizCardResult-red"
+          }
+        >
+          {selectedAnswer.correct ? "Correct" : "Not correct"}
+        </p>
       )}
     </article>
   );

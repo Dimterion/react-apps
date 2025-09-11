@@ -68,16 +68,18 @@ const QuizPage = () => {
           submitted={submitted}
         />
       ))}
-      <button onClick={handleSubmit}>Submit</button>
-      {submitted && (
-        <>
-          <p>
-            Your score: {score} / {quiz.length}
-          </p>
-          <button onClick={handleRestart}>Restart</button>
-        </>
-      )}
-      {error && <p>Please answer all questions.</p>}
+      <section>
+        <button onClick={handleSubmit}>Submit</button>
+        {submitted && (
+          <>
+            <p>
+              Your score: {score} / {quiz.length}
+            </p>
+            <button onClick={handleRestart}>Restart</button>
+          </>
+        )}
+        {error && <p>Please answer all questions.</p>}
+      </section>
     </main>
   );
 };

@@ -27,3 +27,11 @@
   font-style: italic;
   margin: 0.5rem 0;
 }
+
+.quizCardResult-green {
+  color: green;
+}
+
+.quizCardResult-red {
+  color: red;
+}

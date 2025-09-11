@@ -2,6 +2,13 @@
   margin: auto;
 }
 
+.quizPage-container section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  text-align: center;
+}
+
 .quizPage-container button {
   border: 2px solid gray;
   cursor: pointer;
