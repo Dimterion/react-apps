@@ -1,20 +1,24 @@
 import "./quizCard.css";
 
 const QuizCard = ({
+  questionId,
   question,
   answers,
   selectedAnswer,
   onSelect,
   showResult,
+  submitted,
 }) => {
   return (
     <article className="quizCard-container">
       <h2>{question}</h2>
       {answers.map((answer) => (
         <button
-          key={answer.id}
+          key={`${questionId}-${answer.id}`}
           onClick={() => onSelect(answer)}
           className={selectedAnswer?.id === answer.id ? "selected" : ""}
+          disabled={submitted}
+          aria-pressed={selectedAnswer?.id === answer.id}
         >
           {answer.answer}
         </button>

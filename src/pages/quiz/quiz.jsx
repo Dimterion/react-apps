@@ -44,6 +44,12 @@ const QuizPage = () => {
     }
   };
 
+  const handleRestart = () => {
+    setSubmitted(false);
+    setSelectedAnswers({});
+    setError(false);
+  };
+
   const score = Object.entries(selectedAnswers).reduce((acc, [, answer]) => {
     return answer.correct ? acc + 1 : acc;
   }, 0);
@@ -53,18 +59,23 @@ const QuizPage = () => {
       {quiz.map((q) => (
         <QuizCard
           key={q.id}
+          questionId={q.id}
           question={q.question}
           answers={q.answers}
           selectedAnswer={selectedAnswers[q.id]}
           onSelect={(answer) => handleSelect(q.id, answer)}
           showResult={submitted}
+          submitted={submitted}
         />
       ))}
       <button onClick={handleSubmit}>Submit</button>
       {submitted && (
-        <p>
-          Your score: {score} / {quiz.length}
-        </p>
+        <>
+          <p>
+            Your score: {score} / {quiz.length}
+          </p>
+          <button onClick={handleRestart}>Restart</button>
+        </>
       )}
       {error && <p>Please answer all questions.</p>}
     </main>
