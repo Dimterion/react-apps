@@ -3,9 +3,19 @@
 }
 
 .quizPage-quizSection {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (max-width: 320px) {
+  .quizPage-quizSection {
+    grid-template-columns: 1fr;
+  }
 }
 
 .quizPage-container button {
