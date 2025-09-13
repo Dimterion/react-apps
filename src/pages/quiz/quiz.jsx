@@ -51,13 +51,17 @@ const QuizPage = () => {
         ))}
       </section>
       <section className="quizPage-btnSection">
-        <button onClick={handleSubmit}>Submit</button>
+        <button className="quizPage-btn" onClick={handleSubmit}>
+          Submit
+        </button>
         {submitted && (
           <>
-            <p>
+            <p className="quizPage-p">
               Your score: {score} / {quiz.length}
             </p>
-            <button onClick={handleRestart}>Restart</button>
+            <button className="quizPage-btn" onClick={handleRestart}>
+              Restart
+            </button>
           </>
         )}
         {error && <p>Please answer all questions.</p>}

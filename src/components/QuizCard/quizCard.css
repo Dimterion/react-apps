@@ -2,32 +2,36 @@
   border: 2px solid blue;
   border-radius: 0.5rem;
   box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0;
   max-width: 100%;
   padding: 1rem;
   width: 100%;
 }
 
-.quizCard-container h2 {
+.quizCard-h2 {
   font-weight: bold;
   margin: 0.5rem 0;
 }
 
-.quizCard-container button {
+.quizCard-btn {
   border: 2px solid gray;
+  border-radius: 0.5rem;
   cursor: pointer;
-  margin: 0.25rem;
+  margin: 0.25rem auto;
+  padding: 0.25rem 0.5rem;
   width: 100%;
-  padding: 0.25rem;
 }
 
-.quizCard-container button.selected {
+.quizCard-btn.selected {
   background-color: rgba(0, 0, 0, 0.3);
-  font-weight: bold;
+  font-weight: 500;
 }
 
-.quizCard-container p {
+.quizCard-p {
   font-style: italic;
+  font-weight: 500;
   margin: 0.5rem 0;
 }
 

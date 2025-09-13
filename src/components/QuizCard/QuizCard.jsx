@@ -11,12 +11,12 @@ const QuizCard = ({
 }) => {
   return (
     <article className="quizCard-container">
-      <h2>{question}</h2>
+      <h2 className="quizCard-h2">{question}</h2>
       {answers.map((answer) => (
         <button
           key={`${questionId}-${answer.id}`}
           onClick={() => onSelect(answer)}
-          className={selectedAnswer?.id === answer.id ? "selected" : ""}
+          className={`quizCard-btn ${selectedAnswer?.id === answer.id ? "selected" : ""}`}
           disabled={submitted}
           aria-pressed={selectedAnswer?.id === answer.id}
         >
@@ -25,11 +25,11 @@ const QuizCard = ({
       ))}
       {showResult && selectedAnswer && (
         <p
-          className={
+          className={`quizCard-p ${
             selectedAnswer.correct
               ? "quizCardResult-green"
               : "quizCardResult-red"
-          }
+          }`}
         >
           {selectedAnswer.correct ? "Correct" : "Not correct"}
         </p>
