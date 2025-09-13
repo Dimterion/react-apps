@@ -35,10 +35,10 @@
   margin: 0.5rem 0;
 }
 
-.quizCardResult-green {
+.quizCard-p.green {
   color: green;
 }
 
-.quizCardResult-red {
+.quizCard-p.red {
   color: red;
 }

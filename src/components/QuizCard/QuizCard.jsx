@@ -24,13 +24,7 @@ const QuizCard = ({
         </button>
       ))}
       {showResult && selectedAnswer && (
-        <p
-          className={`quizCard-p ${
-            selectedAnswer.correct
-              ? "quizCardResult-green"
-              : "quizCardResult-red"
-          }`}
-        >
+        <p className={`quizCard-p ${selectedAnswer.correct ? "green" : "red"}`}>
           {selectedAnswer.correct ? "Correct" : "Not correct"}
         </p>
       )}

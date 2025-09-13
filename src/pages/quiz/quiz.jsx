@@ -51,7 +51,11 @@ const QuizPage = () => {
         ))}
       </section>
       <section className="quizPage-btnSection">
-        <button className="quizPage-btn" onClick={handleSubmit}>
+        <button
+          className="quizPage-btn"
+          onClick={handleSubmit}
+          disabled={submitted}
+        >
           Submit
         </button>
         {submitted && (
