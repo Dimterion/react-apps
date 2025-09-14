@@ -1,12 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import QuizCard from "../../components/QuizCard/QuizCard";
 import { quiz } from "../../data/quiz";
 import "./quiz.css";
 
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  "https://opentdb.com/api.php?amount=5&category=9&difficulty=medium";
+
 const QuizPage = () => {
+  const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchQuestions = async () => {
+      try {
+        const res = await fetch(API_URL);
+
+        if (!res.ok) throw new Error("Could not fetch data");
+
+        const data = await res.json();
+
+        console.log(data);
+
+        setQuestions(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchQuestions();
+  }, []);
 
   const handleSelect = (questionId, answer) => {
     setSelectedAnswers((prev) => ({
