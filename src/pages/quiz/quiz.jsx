@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import QuizCard from "../../components/QuizCard/QuizCard";
-import { quiz } from "../../data/quiz";
 import "./quiz.css";
 
 const API_URL =
@@ -23,9 +22,21 @@ const QuizPage = () => {
 
         const data = await res.json();
 
-        console.log(data);
+        const displayedData = data.results.map((q) => {
+          const allAnswers = [...q.incorrect_answers, q.correct_answer]
+            .map((text) => ({
+              text,
+              correct: text === q.correct_answer,
+            }))
+            .sort(() => Math.random() - 0.5);
 
-        setQuestions(data.results);
+          return {
+            ...q,
+            answers: allAnswers,
+          };
+        });
+
+        setQuestions(displayedData);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -36,15 +47,15 @@ const QuizPage = () => {
     fetchQuestions();
   }, []);
 
-  const handleSelect = (questionId, answer) => {
+  const handleSelect = (questionIndex, answer) => {
     setSelectedAnswers((prev) => ({
       ...prev,
-      [questionId]: answer,
+      [questionIndex]: answer,
     }));
   };
 
   const handleSubmit = () => {
-    if (Object.entries(selectedAnswers).length === quiz.length) {
+    if (Object.keys(selectedAnswers).length === questions.length) {
       setSubmitted(true);
       setError(false);
     } else {
@@ -58,39 +69,30 @@ const QuizPage = () => {
     setError(false);
   };
 
-  const score = Object.entries(selectedAnswers).reduce((acc, [, answer]) => {
-    return answer.correct ? acc + 1 : acc;
-  }, 0);
+  const score = Object.values(selectedAnswers).reduce(
+    (acc, answer) => (answer.correct ? acc + 1 : acc),
+    0,
+  );
 
   return (
     <main className="quizPage-container">
-      {/* {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <section>
-          {questions.map((result, index) => (
+      <section className="quizPage-quizSection">
+        {loading && <p>Loading questions...</p>}
+        {!loading &&
+          questions.map((q, index) => (
             <QuizCard
-              key={`${index}-${result.question}`}
-              question={result.question}
-              answers={result.incorrect_answers}
+              key={index}
+              questionId={index}
+              question={q.question}
+              answers={q.answers}
+              selectedAnswer={selectedAnswers[index]}
+              onSelect={(answer) => handleSelect(index, answer)}
+              showResult={submitted}
+              submitted={submitted}
             />
           ))}
-        </section>
-      )} */}
-      <section className="quizPage-quizSection">
-        {quiz.map((q) => (
-          <QuizCard
-            key={q.id}
-            questionId={q.id}
-            question={q.question}
-            answers={q.answers}
-            selectedAnswer={selectedAnswers[q.id]}
-            onSelect={(answer) => handleSelect(q.id, answer)}
-            showResult={submitted}
-            submitted={submitted}
-          />
-        ))}
       </section>
+
       <section className="quizPage-btnSection">
         <button
           className="quizPage-btn"
@@ -102,7 +104,7 @@ const QuizPage = () => {
         {submitted && (
           <>
             <p className="quizPage-p">
-              Your score: {score} / {quiz.length}
+              Your score: {score} / {questions.length}
             </p>
             <button className="quizPage-btn" onClick={handleRestart}>
               Restart

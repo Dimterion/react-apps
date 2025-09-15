@@ -12,16 +12,15 @@ const QuizCard = ({
   return (
     <article className="quizCard-container">
       <h2 className="quizCard-h2">{question}</h2>
-      {answers.map((answer) => (
+      {answers.map((answer, index) => (
         <button
-          key={`${questionId}-${answer.id}`}
+          key={`${questionId}-${index}`}
           onClick={() => onSelect(answer)}
-          className={`quizCard-btn ${selectedAnswer?.id === answer.id ? "selected" : ""}`}
+          className={`quizCard-btn ${selectedAnswer?.text === answer.text ? "selected" : ""}`}
           disabled={submitted}
-          aria-pressed={selectedAnswer?.id === answer.id}
-        >
-          {answer.answer}
-        </button>
+          aria-pressed={selectedAnswer?.text === answer.text}
+          dangerouslySetInnerHTML={{ __html: answer.text }}
+        />
       ))}
       {showResult && selectedAnswer && (
         <p className={`quizCard-p ${selectedAnswer.correct ? "green" : "red"}`}>
