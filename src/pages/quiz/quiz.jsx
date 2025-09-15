@@ -25,7 +25,7 @@ const QuizPage = () => {
 
         console.log(data);
 
-        setQuestions(data);
+        setQuestions(data.results);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -64,6 +64,19 @@ const QuizPage = () => {
 
   return (
     <main className="quizPage-container">
+      {/* {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <section>
+          {questions.map((result, index) => (
+            <QuizCard
+              key={`${index}-${result.question}`}
+              question={result.question}
+              answers={result.incorrect_answers}
+            />
+          ))}
+        </section>
+      )} */}
       <section className="quizPage-quizSection">
         {quiz.map((q) => (
           <QuizCard
