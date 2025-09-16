@@ -13,37 +13,41 @@ const QuizPage = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
+  const fetchQuestions = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(API_URL);
+
+      if (!res.ok) throw new Error("Could not fetch data");
+
+      const data = await res.json();
+
+      const displayedData = data.results.map((q) => {
+        const allAnswers = [...q.incorrect_answers, q.correct_answer]
+          .map((text) => ({
+            text,
+            correct: text === q.correct_answer,
+          }))
+          .sort(() => Math.random() - 0.5);
+
+        return {
+          ...q,
+          answers: allAnswers,
+        };
+      });
+
+      setQuestions(displayedData);
+      setSelectedAnswers({});
+      setSubmitted(false);
+      setError(false);
+    } catch (err) {
+      console.log(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchQuestions = async () => {
-      try {
-        const res = await fetch(API_URL);
-
-        if (!res.ok) throw new Error("Could not fetch data");
-
-        const data = await res.json();
-
-        const displayedData = data.results.map((q) => {
-          const allAnswers = [...q.incorrect_answers, q.correct_answer]
-            .map((text) => ({
-              text,
-              correct: text === q.correct_answer,
-            }))
-            .sort(() => Math.random() - 0.5);
-
-          return {
-            ...q,
-            answers: allAnswers,
-          };
-        });
-
-        setQuestions(displayedData);
-      } catch (err) {
-        console.log(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchQuestions();
   }, []);
 
@@ -108,6 +112,9 @@ const QuizPage = () => {
             </p>
             <button className="quizPage-btn" onClick={handleRestart}>
               Restart
+            </button>
+            <button className="quizPage-btn" onClick={fetchQuestions}>
+              New Quiz
             </button>
           </>
         )}
