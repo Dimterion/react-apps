@@ -11,7 +11,7 @@ const QuizPage = () => {
   const [loading, setLoading] = useState(true);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchQuestions = async () => {
@@ -38,7 +38,7 @@ const QuizPage = () => {
 
         setQuestions(displayedData);
       } catch (err) {
-        setError(err.message);
+        console.log(err.message);
       } finally {
         setLoading(false);
       }
