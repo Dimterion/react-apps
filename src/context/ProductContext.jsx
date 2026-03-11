@@ -13,7 +13,9 @@ export function ProductProvider({ children }) {
       let data;
 
       try {
-        const res = await fetch("/api/products");
+        // TO USE WITH REAL API
+        // const res = await fetch("/api/products");
+        const res = await fetch("");
 
         if (
           res.ok &&
@@ -21,7 +23,8 @@ export function ProductProvider({ children }) {
         ) {
           data = await res.json();
         } else {
-          console.warn("Could not fetch, using local data.");
+          // TO USE WITH REAL API
+          // console.warn("Could not fetch, using local data.");
           data = localData?.products ?? [];
         }
       } catch (err) {

@@ -8,6 +8,7 @@ import RatingPage from "./pages/rating";
 import TimerPage from "./pages/timer";
 import NodeInterfacePage from "./pages/node-interface/node-interface";
 import QuizPage from "./pages/quiz/quiz";
+import ReignsPage from "./pages/reigns/reigns";
 import NotFoundPage from "./pages/not-found";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/timer" element={<TimerPage />} />
         <Route path="/node-interface" element={<NodeInterfacePage />} />
         <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/reigns" element={<ReignsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
