@@ -6,9 +6,9 @@ export default function ReignsPage() {
   const diamonds = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   const MAX_DRAG = 50;
-  const MAX_ROT = 6;
+  const MAX_ROTATION = 6;
   const COMMIT_THRESHOLD = 15; // px: require a meaningful drag to commit
-  const PLACEHOLDER = "Only one option for this part.";
+  const PLACEHOLDER = "Only one option here.";
 
   const [currentNodeId, setCurrentNodeId] = useState(story.start);
 
@@ -35,7 +35,7 @@ export default function ReignsPage() {
         ? (rightOption?.text ?? PLACEHOLDER)
         : "";
 
-  const rot = (x / MAX_DRAG) * MAX_ROT;
+  const rotation = (x / MAX_DRAG) * MAX_ROTATION;
 
   function commitChoice(dir) {
     const chosen = dir === "left" ? leftOption : rightOption;
@@ -92,7 +92,7 @@ export default function ReignsPage() {
                 "reigns-verticalCardImgForeground " +
                 (isDragging ? "is-dragging" : "is-settling")
               }
-              style={{ transform: `translateX(${x}px) rotate(${rot}deg)` }}
+              style={{ transform: `translateX(${x}px) rotate(${rotation}deg)` }}
               onPointerDown={onPointerDown}
               onPointerMove={onPointerMove}
               onPointerUp={endDrag}

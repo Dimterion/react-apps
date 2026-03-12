@@ -2,88 +2,88 @@
   "title": "How to Succeed",
   "author": "Dimterion",
   "description": "An everlasting story of achieving greatness.",
-  "start": "d5cd557f-04e9-46cf-b382-269c51de118d",
+  "start": "Node 1",
   "nodes": {
-    "d5cd557f-04e9-46cf-b382-269c51de118d": {
+    "Node 1": {
       "label": "Node 1",
       "text": "You wake up in the morning with the idea of a story.",
       "options": [
         {
           "text": "Continue with your day",
-          "next": "8e483f0b-4ff5-438c-8edd-43bf293fba96",
+          "next": "Node 2",
           "nextLabel": "Node 2"
         },
         {
           "text": "Develop the idea",
-          "next": "2cc8dfed-5efd-452a-89be-c94a73e63f8f",
+          "next": "Node 3",
           "nextLabel": "Node 3"
         }
-      ],
-      "createdAt": 1758185687784
+      ]
     },
-    "8e483f0b-4ff5-438c-8edd-43bf293fba96": {
+    "Node 2": {
       "label": "Node 2",
       "text": "You continue your day as usual, nothing happens.",
       "options": [
         {
           "text": "Start another day",
-          "next": "d5cd557f-04e9-46cf-b382-269c51de118d",
+          "next": "Node 1",
           "nextLabel": "Node 1"
         }
-      ],
-      "createdAt": 1758197485725
+      ]
     },
-    "2cc8dfed-5efd-452a-89be-c94a73e63f8f": {
+    "Node 3": {
       "label": "Node 3",
       "text": "You develop the idea and create something great.",
       "options": [
         {
           "text": "Give up and go back to your routine",
-          "next": "8e483f0b-4ff5-438c-8edd-43bf293fba96",
+          "next": "Node 2",
           "nextLabel": "Node 2"
         },
         {
           "text": "You continue developing the idea",
-          "next": "4eaedd7d-7107-4e92-b48b-c89e6564cd90",
+          "next": "Node 4",
           "nextLabel": "Node 4"
         }
-      ],
-      "createdAt": 1758197486341
+      ]
     },
-    "4eaedd7d-7107-4e92-b48b-c89e6564cd90": {
+    "Node 4": {
       "label": "Node 4",
       "text": "Now you have more ideas in mind.",
       "options": [
         {
           "text": "Start working on all of your ideas at once",
-          "next": "b25df5d9-b2c3-49cb-a275-dce876692990",
+          "next": "Node 5",
           "nextLabel": "Node 5"
         },
         {
           "text": "Focus on your initial idea and develop it fully",
-          "next": "125585e4-7b33-40a4-88b7-34053193a491",
+          "next": "Node 6",
           "nextLabel": "Node 6"
         }
-      ],
-      "createdAt": 1758197487008
+      ]
     },
-    "b25df5d9-b2c3-49cb-a275-dce876692990": {
+    "Node 5": {
       "label": "Node 5",
       "text": "You get overwhelmed and want to go back to sleep.",
       "options": [
         {
           "text": "Go back to sleep",
-          "next": "d5cd557f-04e9-46cf-b382-269c51de118d",
+          "next": "Node 1",
           "nextLabel": "Node 1"
         }
-      ],
-      "createdAt": 1758197487556
+      ]
     },
-    "125585e4-7b33-40a4-88b7-34053193a491": {
+    "Node 6": {
       "label": "Node 6",
       "text": "You achieve success and can now develop other ideas.",
-      "options": [],
-      "createdAt": 1758197585108
+      "options": [
+        {
+          "text": "Start over",
+          "next": "Node 1",
+          "nextLabel": "Node 1"
+        }
+      ]
     }
   }
 }
