@@ -108,8 +108,7 @@ export default function ReignsPage() {
           </div>
 
           <div>
-            <h2>{node?.label ?? "—"}</h2>
-            <p>{story.title}</p>
+            <h2>{story.title}</h2>
           </div>
         </div>
 

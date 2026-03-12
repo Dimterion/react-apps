@@ -10,13 +10,11 @@
       "options": [
         {
           "text": "Continue with your day",
-          "next": "Node 2",
-          "nextLabel": "Node 2"
+          "next": "Node 2"
         },
         {
           "text": "Develop the idea",
-          "next": "Node 3",
-          "nextLabel": "Node 3"
+          "next": "Node 3"
         }
       ]
     },
@@ -26,8 +24,7 @@
       "options": [
         {
           "text": "Start another day",
-          "next": "Node 1",
-          "nextLabel": "Node 1"
+          "next": "Node 1"
         }
       ]
     },
@@ -37,13 +34,11 @@
       "options": [
         {
           "text": "Give up and go back to your routine",
-          "next": "Node 2",
-          "nextLabel": "Node 2"
+          "next": "Node 2"
         },
         {
           "text": "You continue developing the idea",
-          "next": "Node 4",
-          "nextLabel": "Node 4"
+          "next": "Node 4"
         }
       ]
     },
@@ -53,13 +48,11 @@
       "options": [
         {
           "text": "Start working on all of your ideas at once",
-          "next": "Node 5",
-          "nextLabel": "Node 5"
+          "next": "Node 5"
         },
         {
           "text": "Focus on your initial idea and develop it fully",
-          "next": "Node 6",
-          "nextLabel": "Node 6"
+          "next": "Node 6"
         }
       ]
     },
@@ -69,8 +62,7 @@
       "options": [
         {
           "text": "Go back to sleep",
-          "next": "Node 1",
-          "nextLabel": "Node 1"
+          "next": "Node 1"
         }
       ]
     },
@@ -80,8 +72,7 @@
       "options": [
         {
           "text": "Start over",
-          "next": "Node 1",
-          "nextLabel": "Node 1"
+          "next": "Node 1"
         }
       ]
     }
