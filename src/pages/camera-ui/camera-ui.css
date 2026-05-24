@@ -3,3 +3,28 @@
   height: 100%;
   width: 100%;
 }
+
+.battery-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.battery-head {
+  border: 3px solid white;
+  border-right: none;
+  height: 12px;
+  width: 5px;
+}
+
+.battery-body {
+  border: 3px solid white;
+  height: 25px;
+  width: 50px;
+}
+
+.battery-charge {
+  background-color: white;
+  border: 3px solid gray;
+  height: 100%;
+  width: 100%;
+}
