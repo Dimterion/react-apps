@@ -61,6 +61,17 @@
   margin-left: 2.5px;
 }
 
+.cameraUi-topRightSection {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.recordingTime-section {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
 .play-icon {
   background-color: white;
   /* 
@@ -75,10 +86,16 @@
   width: 20px;
 }
 
-.cameraUi-topRightSection {
+.recordedTime-section {
   align-items: center;
-  color: white;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1rem;
   gap: 5px;
+  justify-content: end;
+}
+
+.tape-icon {
+  border: 3px solid white;
+  height: 20px;
+  width: 40px;
 }

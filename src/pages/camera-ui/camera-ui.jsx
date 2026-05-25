@@ -17,8 +17,14 @@ export default function CameraUiPage() {
           <div className="camera-resolution">HDV1080i</div>
         </section>
         <section className="cameraUi-topRightSection">
-          <div className="play-icon"></div>
-          <div>00:01:02:03</div>
+          <div className="recordingTime-section">
+            <div className="play-icon"></div>
+            <div>00:01:02:03</div>
+          </div>
+          <div className="recordedTime-section">
+            <div className="tape-icon"></div>
+            <div>54min</div>
+          </div>
         </section>
       </section>
     </main>
