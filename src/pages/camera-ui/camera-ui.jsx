@@ -33,8 +33,14 @@ export default function CameraUiPage() {
       </section>
       <section className="cameraUi-bottomSection">
         <div className="stop-icon"></div>
-        <div className="rewind-icon"></div>
-        <div className="previous-icon"></div>
+        <div className="rewind-icon">
+          <div className="rewind-triangle"></div>
+          <div className="rewind-triangle"></div>
+        </div>
+        <div className="previous-icon">
+          <div className="previous-triangle"></div>
+          <div className="previous-triangle"></div>
+        </div>
         <div className="play-icon"></div>
         <div className="pause-icon"></div>
         <div className="next-icon"></div>
