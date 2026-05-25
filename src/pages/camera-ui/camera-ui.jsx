@@ -31,6 +31,16 @@ export default function CameraUiPage() {
           </div>
         </section>
       </section>
+      <section className="cameraUi-bottomSection">
+        <div className="stop-icon"></div>
+        <div className="rewind-icon"></div>
+        <div className="previous-icon"></div>
+        <div className="play-icon"></div>
+        <div className="pause-icon"></div>
+        <div className="next-icon"></div>
+        <div className="fastForward-icon"></div>
+        <div>P-MENU</div>
+      </section>
     </main>
   );
 }
