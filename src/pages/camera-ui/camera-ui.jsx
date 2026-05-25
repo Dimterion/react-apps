@@ -22,7 +22,11 @@ export default function CameraUiPage() {
             <div>00:01:02:03</div>
           </div>
           <div className="recordedTime-section">
-            <div className="tape-icon"></div>
+            <div className="tape-icon">
+              <div className="tape-icon-circle"></div>
+              <div className="tape-icon-connectionLine"></div>
+              <div className="tape-icon-circle"></div>
+            </div>
             <div>54min</div>
           </div>
         </section>
