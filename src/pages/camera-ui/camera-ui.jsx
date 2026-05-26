@@ -46,7 +46,10 @@ export default function CameraUiPage() {
           <div className="pause-line"></div>
           <div className="pause-line"></div>
         </div>
-        <div className="next-icon"></div>
+        <div className="next-icon">
+          <div className="next-triangle"></div>
+          <div className="next-triangle"></div>
+        </div>
         <div className="fastForward-icon">
           <div className="fastForward-triangle"></div>
           <div className="fastForward-triangle"></div>
