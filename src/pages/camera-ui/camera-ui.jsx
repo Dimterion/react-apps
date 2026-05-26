@@ -19,7 +19,7 @@ export default function CameraUiPage() {
         <section className="cameraUi-topRightSection">
           <div className="recordingTime-section">
             <div className="recording-icon"></div>
-            <div>00:01:02:03</div>
+            <div className="recordingTime">00:01:02:03</div>
           </div>
           <div className="recordedTime-section">
             <div className="tape-icon">
