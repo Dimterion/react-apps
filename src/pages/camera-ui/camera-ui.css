@@ -19,8 +19,12 @@
   margin: auto;
   max-height: 768px;
   max-width: 1024px;
-  padding: 1rem;
+  padding: 0.25rem;
   width: 100%;
+
+  @media (width >= 500px) {
+    padding: 1rem;
+  }
 }
 
 .cameraUi-topSection {
@@ -84,11 +88,15 @@
 }
 
 .battery-time {
-  font-size: 1.2rem;
+  font-size: 1rem;
+
+  @media (width >= 500px) {
+    font-size: 1.2rem;
+  }
 }
 
 .camera-resolution {
-  margin-left: 2.5px;
+  margin-left: 0.1rem;
 }
 
 .cameraUi-topRightSection {
@@ -112,13 +120,19 @@
   0% 100% drops down to the bottom-left corner, completing the arrow shape;
   */
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-  height: var(--main-height);
-  margin-right: 5px;
-  width: var(--main-width);
+  height: 15px;
+  margin-right: 0.25rem;
+  width: 15px;
+
+  @media (width >= 500px) {
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    width: var(--main-width);
+  }
 }
 
 .recordingTime {
   font-family: "Fira Code", monospace;
+  font-size: 1rem;
 
   /* 
   This tells the browser to use the font's alternative slashed zero (only work if the font actually contains the slashed zero character in its code, e.g.: Inter, SF Pro (Apple), Segoe UI (Windows), Consolas, and Monaco):
@@ -127,6 +141,10 @@
   font-feature-settings: "zero";
 
   */
+
+  @media (width >= 500px) {
+    font-size: 1.5rem;
+  }
 }
 
 .recordedTime-section {
