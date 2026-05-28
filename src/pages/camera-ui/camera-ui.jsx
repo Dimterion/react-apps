@@ -12,14 +12,14 @@ export default function CameraUiPage() {
                 <div className="battery-charge"></div>
               </div>
             </div>
-            <div className="battery-time">45min</div>
+            <p className="battery-time">45min</p>
           </div>
-          <div className="camera-resolution">HDV1080i</div>
+          <p className="camera-resolution">HDV1080i</p>
         </section>
         <section className="cameraUi-topRightSection">
           <div className="recordingTime-section">
             <div className="recording-icon"></div>
-            <div className="recordingTime">00:01:02:03</div>
+            <p className="recordingTime">00:01:02:03</p>
           </div>
           <div className="recordedTime-section">
             <div className="tape-icon">
@@ -27,7 +27,7 @@ export default function CameraUiPage() {
               <div className="tape-icon-connectionLine"></div>
               <div className="tape-icon-circle"></div>
             </div>
-            <div>54min</div>
+            <p>54min</p>
           </div>
         </section>
       </section>
@@ -54,7 +54,7 @@ export default function CameraUiPage() {
           <div className="fastForward-triangle"></div>
           <div className="fastForward-triangle"></div>
         </div>
-        <div>P-MENU</div>
+        <p>P-MENU</p>
       </section>
     </main>
   );
