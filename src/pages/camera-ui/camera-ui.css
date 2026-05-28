@@ -160,12 +160,17 @@
 
 .tape-icon {
   align-items: center;
-  border: 3px solid white;
+  border: 2px solid white;
   display: flex;
   height: 20px;
   justify-content: space-around;
   position: relative;
-  width: 40px;
+  width: 30px;
+
+  @media (width >= 500px) {
+    border: 3px solid white;
+    width: 35px;
+  }
 }
 
 .tape-icon-circle {
@@ -179,8 +184,12 @@
   background-color: white;
   height: 0.5px;
   position: absolute;
-  top: 2.5px;
-  width: 20px;
+  top: 3.25px;
+  width: 15px;
+
+  @media (width >= 500px) {
+    top: 2.5px;
+  }
 }
 
 .cameraUi-bottomSection {
