@@ -2,10 +2,16 @@ import "./camera-ui.css";
 
 export default function CameraUiPage() {
   return (
-    <main className="cameraUi-main">
-      <section className="cameraUi-topSection">
-        <section className="cameraUi-topLeftSection">
-          <div className="battery-section">
+    <main className="camera-ui" aria-label="Camera interface">
+      <section className="camera-ui__top">
+        <section
+          className="camera-ui__group"
+          aria-label="Battery and video format information"
+        >
+          <div
+            className="battery"
+            aria-label="Remaining battery life"
+          >
             <div className="battery-wrapper">
               <div className="battery-head"></div>
               <div className="battery-body">

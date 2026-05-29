@@ -11,7 +11,7 @@
   --main-gap: 0.25rem;
 }
 
-.cameraUi-main {
+.camera-ui {
   background-image: url("../../assets/images/city-view-background.jpg");
   display: flex;
   flex-flow: column nowrap;
@@ -28,17 +28,17 @@
   }
 }
 
-.cameraUi-topSection {
+.camera-ui__top {
   display: flex;
   justify-content: space-between;
 }
 
-.cameraUi-topLeftSection {
+.camera-ui__group {
   color: white;
   font-weight: bold;
 }
 
-.battery-section {
+.battery {
   display: flex;
   gap: var(--main-gap);
 }
