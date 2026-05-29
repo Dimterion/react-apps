@@ -43,19 +43,19 @@
   gap: var(--main-gap);
 }
 
-.battery-wrapper {
+.battery__icon {
   align-items: center;
   display: flex;
 }
 
-.battery-head {
+.battery__head {
   border: 3px solid white;
   border-right: none;
   height: 12px;
   width: 5px;
 }
 
-.battery-body {
+.battery__body {
   border: 3px solid white;
   display: flex;
   height: var(--main-height);
@@ -68,7 +68,7 @@
   }
 }
 
-.battery-charge {
+.battery__charge {
   background-color: white;
   /* 
   30px 0% (Top-Left): shifts right by 30 pixels; start of the slash;
@@ -90,7 +90,7 @@
   }
 }
 
-.battery-time {
+.battery__time {
   font-size: 1rem;
 
   @media (width >= 500px) {

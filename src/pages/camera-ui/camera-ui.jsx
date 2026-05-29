@@ -8,17 +8,14 @@ export default function CameraUiPage() {
           className="camera-ui__group"
           aria-label="Battery and video format information"
         >
-          <div
-            className="battery"
-            aria-label="Remaining battery life"
-          >
-            <div className="battery-wrapper">
-              <div className="battery-head"></div>
-              <div className="battery-body">
-                <div className="battery-charge"></div>
-              </div>
+          <div className="battery" aria-label="Remaining battery life">
+            <div className="battery__icon" aria-hidden="true">
+              <span className="battery__head" />
+              <span className="battery__body">
+                <span className="battery__charge" />
+              </span>
             </div>
-            <p className="battery-time">45min</p>
+            <p className="battery__time">45min</p>
           </div>
           <p className="camera-resolution">HDV1080i</p>
         </section>
