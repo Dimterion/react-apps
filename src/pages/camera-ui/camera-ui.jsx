@@ -17,13 +17,19 @@ export default function CameraUiPage() {
             </div>
             <p className="battery__time">45min</p>
           </div>
-          <p className="camera-resolution">HDV1080i</p>
+
+          <p className="camera-ui__resolution">HDV1080i</p>
         </section>
-        <section className="cameraUi-topRightSection">
+
+        <section
+          className="cameraUi-topRightSection"
+          aria-label="Recording information"
+        >
           <div className="recordingTime-section">
-            <div className="recording-icon"></div>
+            <span className="recording-icon"></span>
             <p className="recordingTime">00:01:02:03</p>
           </div>
+
           <div className="recordedTime-section">
             <div className="tape-icon">
               <div className="tape-icon-circle"></div>
