@@ -31,38 +31,39 @@ export default function CameraUiPage() {
           </div>
 
           <div className="recordedTime-section">
-            <div className="tape-icon">
-              <div className="tape-icon-circle"></div>
-              <div className="tape-icon-connectionLine"></div>
-              <div className="tape-icon-circle"></div>
-            </div>
+            <span className="tape-icon" aria-hidden="true">
+              <span className="tape-icon-circle" />
+              <span className="tape-icon-connectionLine" />
+              <span className="tape-icon-circle" />
+            </span>
             <p>54min</p>
           </div>
         </section>
       </section>
-      <section className="cameraUi-bottomSection">
-        <div className="stop-icon"></div>
-        <div className="rewind-icon">
-          <div className="rewind-triangle"></div>
-          <div className="rewind-triangle"></div>
-        </div>
-        <div className="previous-icon">
-          <div className="previous-triangle"></div>
-          <div className="previous-triangle"></div>
-        </div>
-        <div className="play-icon"></div>
-        <div className="pause-icon">
-          <div className="pause-line"></div>
-          <div className="pause-line"></div>
-        </div>
-        <div className="next-icon">
-          <div className="next-triangle"></div>
-          <div className="next-triangle"></div>
-        </div>
-        <div className="fastForward-icon">
-          <div className="fastForward-triangle"></div>
-          <div className="fastForward-triangle"></div>
-        </div>
+
+      <section className="camera-ui__bottom" aria-label="Playback controls">
+        <span className="stop-icon" />
+        <span className="rewind-icon">
+          <span className="rewind-triangle" />
+          <span className="rewind-triangle" />
+        </span>
+        <span className="previous-icon">
+          <span className="previous-triangle" />
+          <span className="previous-triangle" />
+        </span>
+        <span className="play-icon" />
+        <span className="pause-icon">
+          <span className="pause-line" />
+          <span className="pause-line" />
+        </span>
+        <span className="next-icon">
+          <div className="next-triangle" />
+          <div className="next-triangle" />
+        </span>
+        <span className="fastForward-icon">
+          <span className="fastForward-triangle" />
+          <span className="fastForward-triangle" />
+        </span>
         <p>P-MENU</p>
       </section>
     </main>

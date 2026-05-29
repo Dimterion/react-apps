@@ -193,7 +193,7 @@
   }
 }
 
-.cameraUi-bottomSection {
+.camera-ui__bottom {
   align-items: center;
   color: white;
   display: flex;
