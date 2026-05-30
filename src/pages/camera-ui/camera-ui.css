@@ -201,7 +201,7 @@
   }
 }
 
-.stop-icon {
+.icon--stop {
   background-color: white;
   height: 15px;
   margin-right: 7px;
@@ -214,12 +214,12 @@
   }
 }
 
-.rewind-icon {
+.icon--rewind {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.rewind-triangle {
+.icon--rewind-triangle {
   background-color: white;
   /* Cuts the square into a left-pointing triangle.
 
@@ -238,14 +238,14 @@
   }
 }
 
-.previous-icon {
+.icon--previous {
   border: 3px solid white;
   display: flex;
   flex-wrap: nowrap;
   padding: 3px;
 }
 
-.previous-triangle {
+.icon--previous-triangle {
   background-color: white;
   /* Cuts the square into a left-pointing triangle.
 
@@ -258,7 +258,7 @@
   width: 10px;
 }
 
-.play-icon {
+.icon--play {
   background-color: white;
   /* 
   Cuts the square into a right-pointing triangle.
@@ -280,14 +280,14 @@
   }
 }
 
-.pause-icon {
+.icon--pause {
   display: flex;
   flex-flow: row nowrap;
   gap: 5px;
   margin-right: 5px;
 }
 
-.pause-line {
+.icon--pause-line {
   background-color: white;
   height: 15px;
   width: 3px;
@@ -298,14 +298,14 @@
   }
 }
 
-.next-icon {
+.icon--next {
   border: 3px solid white;
   display: flex;
   flex-wrap: nowrap;
   padding: 3px;
 }
 
-.next-triangle {
+.icon--next-triangle {
   background-color: white;
   /* 
   Cuts the square into a right-pointing triangle.
@@ -319,13 +319,13 @@
   width: 10px;
 }
 
-.fastForward-icon {
+.icon--fast-forward {
   display: flex;
   flex-wrap: nowrap;
   margin-right: 5px;
 }
 
-.fastForward-triangle {
+.icon--fast-forward-triangle {
   background-color: white;
   /* 
   Cuts the square into a right-pointing triangle.

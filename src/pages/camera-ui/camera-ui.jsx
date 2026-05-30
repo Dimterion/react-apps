@@ -42,27 +42,27 @@ export default function CameraUiPage() {
       </section>
 
       <section className="camera-ui__bottom" aria-label="Playback controls">
-        <span className="stop-icon" />
-        <span className="rewind-icon">
-          <span className="rewind-triangle" />
-          <span className="rewind-triangle" />
+        <span className="icon--stop" aria-hidden="true" />
+        <span className="icon--rewind" aria-hidden="true">
+          <span className="icon--rewind-triangle" />
+          <span className="icon--rewind-triangle" />
         </span>
-        <span className="previous-icon">
-          <span className="previous-triangle" />
-          <span className="previous-triangle" />
+        <span className="icon--previous" aria-hidden="true">
+          <span className="icon--previous-triangle" />
+          <span className="icon--previous-triangle" />
         </span>
-        <span className="play-icon" />
-        <span className="pause-icon">
-          <span className="pause-line" />
-          <span className="pause-line" />
+        <span className="icon--play" aria-hidden="true" />
+        <span className="icon--pause" aria-hidden="true">
+          <span className="icon--pause-line" />
+          <span className="icon--pause-line" />
         </span>
-        <span className="next-icon">
-          <div className="next-triangle" />
-          <div className="next-triangle" />
+        <span className="icon--next" aria-hidden="true">
+          <div className="icon--next-triangle" />
+          <div className="icon--next-triangle" />
         </span>
-        <span className="fastForward-icon">
-          <span className="fastForward-triangle" />
-          <span className="fastForward-triangle" />
+        <span className="icon--fast-forward" aria-hidden="true">
+          <span className="icon--fast-forward-triangle" />
+          <span className="icon--fast-forward-triangle" />
         </span>
         <p>P-MENU</p>
       </section>
