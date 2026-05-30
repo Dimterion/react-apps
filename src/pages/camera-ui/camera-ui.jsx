@@ -22,12 +22,12 @@ export default function CameraUiPage() {
         </section>
 
         <section
-          className="cameraUi-topRightSection"
+          className="camera-ui__group camera-ui__group--right"
           aria-label="Recording information"
         >
-          <div className="recordingTime-section">
-            <span className="recording-icon"></span>
-            <p className="recordingTime">00:01:02:03</p>
+          <div className="status-row">
+            <span className="icon--record" aria-hidden="true"></span>
+            <p className="status-row__text">00:01:02:03</p>
           </div>
 
           <div className="recordedTime-section">
