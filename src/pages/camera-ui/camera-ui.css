@@ -111,6 +111,7 @@
   align-items: center;
   display: flex;
   gap: var(--main-gap);
+  justify-content: end;
 }
 
 .icon--record {
@@ -151,15 +152,7 @@
   }
 }
 
-.recordedTime-section {
-  align-items: center;
-  display: flex;
-  font-size: 1rem;
-  gap: var(--main-gap);
-  justify-content: end;
-}
-
-.tape-icon {
+.icon--tape {
   align-items: center;
   border: 2px solid white;
   display: flex;
@@ -174,14 +167,14 @@
   }
 }
 
-.tape-icon-circle {
+.icon--tape-circle {
   border: 1px solid white;
   border-radius: 50%;
   height: 10px;
   width: 10px;
 }
 
-.tape-icon-connectionLine {
+.icon--tape-line {
   background-color: white;
   height: 0.5px;
   position: absolute;

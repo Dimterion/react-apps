@@ -30,13 +30,13 @@ export default function CameraUiPage() {
             <p className="status-row__text">00:01:02:03</p>
           </div>
 
-          <div className="recordedTime-section">
-            <span className="tape-icon" aria-hidden="true">
-              <span className="tape-icon-circle" />
-              <span className="tape-icon-connectionLine" />
-              <span className="tape-icon-circle" />
+          <div className="status-row">
+            <span className="icon--tape" aria-hidden="true">
+              <span className="icon--tape-circle" />
+              <span className="icon--tape-line" />
+              <span className="icon--tape-circle" />
             </span>
-            <p>54min</p>
+            <p className="status-row__text">54min</p>
           </div>
         </section>
       </section>
