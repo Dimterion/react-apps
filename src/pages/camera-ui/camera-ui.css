@@ -5,8 +5,10 @@
   --color-overlay: #fff;
 
   /* Dimensions */
-  --main-height: 20px;
-  --main-width: 20px;
+  --icon-size-sm: 10px;
+  --icon-size-md: 15px;
+  --icon-size-lg: 20px;
+
   --main-gap: 0.25rem;
 }
 
@@ -60,7 +62,7 @@
 .battery__body {
   border: 3px solid var(--color-overlay);
   display: flex;
-  height: var(--main-height);
+  height: var(--icon-size-lg);
   justify-content: end;
   width: 25px;
 
@@ -81,13 +83,13 @@
   If text is placed inside this trapezoid, it will still align to the original rectangular bounding box. To prevent text from clipping or looking too close to the slashed edge, add some left padding to the element (e.g., padding-left: 50px;).
   */
   clip-path: polygon(12.5px 0%, 100% 0%, 100% 100%, 0% 100%);
-  height: 10px;
+  height: var(--icon-size-sm);
   margin: auto;
-  width: 15px;
+  width: var(--icon-size-md);
 
   @media (width >= 500px) {
     clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 0% 100%);
-    height: 15px;
+    height: var(--icon-size-md);
     width: 40px;
   }
 }
@@ -143,13 +145,13 @@
 }
 
 .icon--record {
-  height: 15px;
+  height: var(--icon-size-md);
   margin-right: 0.25rem;
-  width: 15px;
+  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--main-height);
-    width: var(--main-width);
+    height: var(--icon-size-lg);
+    width: var(--icon-size-lg);
   }
 }
 
@@ -174,7 +176,7 @@
   align-items: center;
   border: 2px solid var(--color-overlay);
   display: flex;
-  height: var(--main-height);
+  height: var(--icon-size-lg);
   justify-content: space-around;
   position: relative;
   width: 30px;
@@ -188,8 +190,8 @@
 .icon--tape-circle {
   border: 1px solid var(--color-overlay);
   border-radius: 50%;
-  height: 10px;
-  width: 10px;
+  height: var(--icon-size-sm);
+  width: var(--icon-size-sm);
 }
 
 .icon--tape-line {
@@ -219,14 +221,14 @@
 }
 
 .icon--stop {
-  height: 15px;
+  height: var(--icon-size-md);
   margin-right: 7px;
-  width: 15px;
+  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--main-height);
+    height: var(--icon-size-lg);
     margin-right: 30px;
-    width: var(--main-width);
+    width: var(--icon-size-lg);
   }
 }
 
@@ -247,12 +249,12 @@
 }
 
 .icon--rewind-triangle {
-  height: 15px;
-  width: 15px;
+  height: var(--icon-size-md);
+  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--main-height);
-    width: var(--main-width);
+    height: var(--icon-size-lg);
+    width: var(--icon-size-lg);
   }
 }
 
@@ -264,20 +266,20 @@
 }
 
 .icon--previous-triangle {
-  height: 10px;
-  width: 10px;
+  height: var(--icon-size-sm);
+  width: var(--icon-size-sm);
 }
 
 .icon--play {
-  height: 15px;
+  height: var(--icon-size-md);
   margin-left: 5px;
   margin-right: 10px;
-  width: 15px;
+  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--main-height);
+    height: var(--icon-size-lg);
     margin-right: 15px;
-    width: var(--main-width);
+    width: var(--icon-size-lg);
   }
 }
 
@@ -289,11 +291,11 @@
 }
 
 .icon--pause-line {
-  height: 15px;
+  height: var(--icon-size-md);
   width: 3px;
 
   @media (width >= 500px) {
-    height: var(--main-height);
+    height: var(--icon-size-lg);
     width: 3px;
   }
 }
@@ -306,8 +308,8 @@
 }
 
 .icon--next-triangle {
-  height: 10px;
-  width: 10px;
+  height: var(--icon-size-sm);
+  width: var(--icon-size-sm);
 }
 
 .icon--fast-forward {
@@ -317,11 +319,11 @@
 }
 
 .icon--fast-forward-triangle {
-  height: 15px;
-  width: 15px;
+  height: var(--icon-size-md);
+  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--main-height);
-    width: var(--main-width);
+    height: var(--icon-size-lg);
+    width: var(--icon-size-lg);
   }
 }
