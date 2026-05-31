@@ -193,13 +193,13 @@
 }
 
 .icon--tape-line {
-  height: 0.5px;
+  height: 1%;
   position: absolute;
-  top: 3.25px;
-  width: 15px;
+  top: 20%;
+  width: 60%;
 
   @media (width >= 500px) {
-    top: 2.5px;
+    top: 16%;
   }
 }
 
@@ -207,7 +207,7 @@
   align-items: center;
   color: var(--color-overlay);
   display: flex;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: bold;
   gap: var(--main-gap);
   justify-content: center;
