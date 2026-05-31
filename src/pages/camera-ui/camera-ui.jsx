@@ -57,8 +57,8 @@ export default function CameraUiPage() {
           <span className="icon--pause-line" />
         </span>
         <span className="icon--next" aria-hidden="true">
-          <div className="icon--next-triangle" />
-          <div className="icon--next-triangle" />
+          <span className="icon--next-triangle" />
+          <span className="icon--next-triangle" />
         </span>
         <span className="icon--fast-forward" aria-hidden="true">
           <span className="icon--fast-forward-triangle" />

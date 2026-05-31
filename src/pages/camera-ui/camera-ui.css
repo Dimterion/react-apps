@@ -116,8 +116,19 @@
   justify-content: end;
 }
 
-.icon--record {
+.icon--record,
+.icon--tape-line,
+.icon--stop,
+.icon--rewind-triangle,
+.icon--previous-triangle,
+.icon--play,
+.icon--pause-line,
+.icon--next-triangle,
+.icon--fast-forward-triangle {
   background-color: var(--color-overlay);
+}
+
+.icon--record {
   /* 
   Cuts the square into a right-pointing triangle.
 
@@ -131,7 +142,6 @@
   width: 15px;
 
   @media (width >= 500px) {
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     height: var(--main-height);
     width: var(--main-width);
   }
@@ -177,7 +187,6 @@
 }
 
 .icon--tape-line {
-  background-color: var(--color-overlay);
   height: 0.5px;
   position: absolute;
   top: 3.25px;
@@ -204,7 +213,6 @@
 }
 
 .icon--stop {
-  background-color: var(--color-overlay);
   height: 15px;
   margin-right: 7px;
   width: 15px;
@@ -222,7 +230,6 @@
 }
 
 .icon--rewind-triangle {
-  background-color: var(--color-overlay);
   /* Cuts the square into a left-pointing triangle.
 
   100% 0% starts at the top-right corner;
@@ -248,7 +255,6 @@
 }
 
 .icon--previous-triangle {
-  background-color: var(--color-overlay);
   /* Cuts the square into a left-pointing triangle.
 
   100% 0% starts at the top-right corner;
@@ -261,7 +267,6 @@
 }
 
 .icon--play {
-  background-color: var(--color-overlay);
   /* 
   Cuts the square into a right-pointing triangle.
 
@@ -290,7 +295,6 @@
 }
 
 .icon--pause-line {
-  background-color: var(--color-overlay);
   height: 15px;
   width: 3px;
 
@@ -308,7 +312,6 @@
 }
 
 .icon--next-triangle {
-  background-color: var(--color-overlay);
   /* 
   Cuts the square into a right-pointing triangle.
 
@@ -328,7 +331,6 @@
 }
 
 .icon--fast-forward-triangle {
-  background-color: var(--color-overlay);
   /* 
   Cuts the square into a right-pointing triangle.
 
