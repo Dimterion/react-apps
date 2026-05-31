@@ -9,7 +9,10 @@
   --icon-size-md: 15px;
   --icon-size-lg: 20px;
 
-  --main-gap: 0.25rem;
+  /* Gaps */
+  --gap-xs: 0.25rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
 }
 
 .camera-ui {
@@ -39,12 +42,11 @@
 
 .camera-ui__group {
   color: var(--color-overlay);
-  font-weight: bold;
 }
 
 .battery {
   display: flex;
-  gap: var(--main-gap);
+  gap: var(--gap-xs);
 }
 
 .battery__icon {
@@ -107,14 +109,13 @@
 }
 
 .camera-ui__group--right {
-  color: var(--color-overlay);
   font-size: 1.5rem;
 }
 
 .status-row {
   align-items: center;
   display: flex;
-  gap: var(--main-gap);
+  gap: var(--gap-xs);
   justify-content: end;
 }
 
@@ -210,13 +211,12 @@
   color: var(--color-overlay);
   display: flex;
   font-size: 0.7rem;
-  font-weight: bold;
-  gap: var(--main-gap);
+  gap: var(--gap-xs);
   justify-content: center;
 
   @media (width >= 500px) {
     font-size: 1.5rem;
-    gap: 1rem;
+    gap: var(--gap-md);
   }
 }
 
@@ -286,7 +286,7 @@
 .icon--pause {
   display: flex;
   flex-flow: row nowrap;
-  gap: 5px;
+  gap: var(--gap-xs);
   margin-right: 5px;
 }
 
