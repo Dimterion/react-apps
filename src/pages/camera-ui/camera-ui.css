@@ -10,9 +10,10 @@
   --icon-size-lg: 20px;
 
   /* Gaps */
-  --gap-xs: 0.25rem;
-  --gap-sm: 0.5rem;
-  --gap-md: 1rem;
+  --gap-xs: 0.25rem; /* 4px  */
+  --gap-sm: 0.5rem; /* 8px  */
+  --gap-md: 1rem; /* 16px */
+  --gap-lg: 2rem; /* 32px */
 }
 
 .camera-ui {
@@ -64,7 +65,7 @@
 .battery__body {
   border: 3px solid var(--color-overlay);
   display: flex;
-  height: var(--icon-size-lg);
+  height: 20px;
   justify-content: end;
   width: 25px;
 
@@ -85,13 +86,13 @@
   If text is placed inside this trapezoid, it will still align to the original rectangular bounding box. To prevent text from clipping or looking too close to the slashed edge, add some left padding to the element (e.g., padding-left: 50px;).
   */
   clip-path: polygon(12.5px 0%, 100% 0%, 100% 100%, 0% 100%);
-  height: var(--icon-size-sm);
+  height: 10px;
   margin: auto;
-  width: var(--icon-size-md);
+  width: 15px;
 
   @media (width >= 500px) {
     clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 0% 100%);
-    height: var(--icon-size-md);
+    height: 15px;
     width: 40px;
   }
 }
@@ -210,7 +211,7 @@
   align-items: center;
   color: var(--color-overlay);
   display: flex;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   gap: var(--gap-xs);
   justify-content: center;
 
@@ -227,7 +228,7 @@
 
   @media (width >= 500px) {
     height: var(--icon-size-lg);
-    margin-right: 30px;
+    margin-right: var(--gap-lg);
     width: var(--icon-size-lg);
   }
 }
@@ -272,13 +273,13 @@
 
 .icon--play {
   height: var(--icon-size-md);
-  margin-left: 5px;
+  margin-left: var(--gap-xs);
   margin-right: 10px;
   width: var(--icon-size-md);
 
   @media (width >= 500px) {
     height: var(--icon-size-lg);
-    margin-right: 15px;
+    margin-right: var(--gap-md);
     width: var(--icon-size-lg);
   }
 }
@@ -287,7 +288,7 @@
   display: flex;
   flex-flow: row nowrap;
   gap: var(--gap-xs);
-  margin-right: 5px;
+  margin-right: var(--gap-xs);
 }
 
 .icon--pause-line {
@@ -296,7 +297,6 @@
 
   @media (width >= 500px) {
     height: var(--icon-size-lg);
-    width: 3px;
   }
 }
 
@@ -315,7 +315,7 @@
 .icon--fast-forward {
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 5px;
+  margin-right: var(--gap-xs);
 }
 
 .icon--fast-forward-triangle {
