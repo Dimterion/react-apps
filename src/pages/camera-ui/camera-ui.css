@@ -129,6 +129,29 @@
   justify-content: end;
 }
 
+.icon--rewind,
+.icon--previous,
+.icon--next,
+.icon--fast-forward,
+.icon--pause {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.icon--record,
+.icon--stop,
+.icon--play,
+.icon--rewind-triangle,
+.icon--fast-forward-triangle {
+  height: var(--icon-size-md);
+  width: var(--icon-size-md);
+
+  @media (width >= 500px) {
+    height: var(--icon-size-lg);
+    width: var(--icon-size-lg);
+  }
+}
+
 .icon--record,
 .icon--tape-line,
 .icon--stop,
@@ -156,14 +179,7 @@
 }
 
 .icon--record {
-  height: var(--icon-size-md);
   margin-right: var(--gap-xs);
-  width: var(--icon-size-md);
-
-  @media (width >= 500px) {
-    height: var(--icon-size-lg);
-    width: var(--icon-size-lg);
-  }
 }
 
 .status-row__text {
@@ -223,20 +239,11 @@
 }
 
 .icon--stop {
-  height: var(--icon-size-md);
   margin-right: var(--gap-sm);
-  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--icon-size-lg);
     margin-right: var(--gap-lg);
-    width: var(--icon-size-lg);
   }
-}
-
-.icon--rewind {
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .icon--rewind-triangle,
@@ -250,20 +257,8 @@
   clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
 }
 
-.icon--rewind-triangle {
-  height: var(--icon-size-md);
-  width: var(--icon-size-md);
-
-  @media (width >= 500px) {
-    height: var(--icon-size-lg);
-    width: var(--icon-size-lg);
-  }
-}
-
 .icon--previous {
   border: var(--border-sm) solid var(--color-overlay);
-  display: flex;
-  flex-wrap: nowrap;
   padding: var(--gap-xs);
 
   @media (width >= 500px) {
@@ -277,22 +272,16 @@
 }
 
 .icon--play {
-  height: var(--icon-size-md);
   margin-left: var(--gap-xs);
   margin-right: var(--gap-sm);
-  width: var(--icon-size-md);
 
   @media (width >= 500px) {
-    height: var(--icon-size-lg);
     margin-left: var(--gap-sm);
     margin-right: var(--gap-md);
-    width: var(--icon-size-lg);
   }
 }
 
 .icon--pause {
-  display: flex;
-  flex-flow: row nowrap;
   gap: var(--gap-xs);
   margin-right: var(--gap-xs);
 }
@@ -308,8 +297,6 @@
 
 .icon--next {
   border: var(--border-sm) solid var(--color-overlay);
-  display: flex;
-  flex-wrap: nowrap;
   padding: var(--gap-xs);
 
   @media (width >= 500px) {
@@ -323,17 +310,5 @@
 }
 
 .icon--fast-forward {
-  display: flex;
-  flex-wrap: nowrap;
   margin-right: var(--gap-xs);
-}
-
-.icon--fast-forward-triangle {
-  height: var(--icon-size-md);
-  width: var(--icon-size-md);
-
-  @media (width >= 500px) {
-    height: var(--icon-size-lg);
-    width: var(--icon-size-lg);
-  }
 }
