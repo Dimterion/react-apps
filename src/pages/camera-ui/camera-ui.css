@@ -14,6 +14,10 @@
   --gap-sm: 0.5rem; /* 8px  */
   --gap-md: 1rem; /* 16px */
   --gap-lg: 2rem; /* 32px */
+
+  /* Borders */
+  --border-sm: 1px;
+  --border-md: 3px;
 }
 
 .camera-ui {
@@ -56,14 +60,14 @@
 }
 
 .battery__head {
-  border: 3px solid var(--color-overlay);
+  border: var(--border-md) solid var(--color-overlay);
   border-right: none;
   height: 12px;
   width: 5px;
 }
 
 .battery__body {
-  border: 3px solid var(--color-overlay);
+  border: var(--border-md) solid var(--color-overlay);
   display: flex;
   height: 20px;
   justify-content: end;
@@ -181,7 +185,7 @@
 
 .icon--tape {
   align-items: center;
-  border: 1px solid var(--color-overlay);
+  border: var(--border-sm) solid var(--color-overlay);
   display: flex;
   height: var(--icon-size-lg);
   justify-content: space-around;
@@ -190,7 +194,7 @@
 }
 
 .icon--tape-circle {
-  border: 1px solid var(--color-overlay);
+  border: var(--border-sm) solid var(--color-overlay);
   border-radius: 50%;
   height: var(--icon-size-sm);
   width: var(--icon-size-sm);
@@ -213,7 +217,7 @@
   justify-content: center;
 
   @media (width >= 500px) {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     gap: var(--gap-md);
   }
 }
@@ -257,10 +261,14 @@
 }
 
 .icon--previous {
-  border: 3px solid var(--color-overlay);
+  border: var(--border-sm) solid var(--color-overlay);
   display: flex;
   flex-wrap: nowrap;
   padding: var(--gap-xs);
+
+  @media (width >= 500px) {
+    margin-right: var(--gap-sm);
+  }
 }
 
 .icon--previous-triangle {
@@ -276,6 +284,7 @@
 
   @media (width >= 500px) {
     height: var(--icon-size-lg);
+    margin-left: var(--gap-sm);
     margin-right: var(--gap-md);
     width: var(--icon-size-lg);
   }
@@ -298,10 +307,14 @@
 }
 
 .icon--next {
-  border: 3px solid var(--color-overlay);
+  border: var(--border-sm) solid var(--color-overlay);
   display: flex;
   flex-wrap: nowrap;
   padding: var(--gap-xs);
+
+  @media (width >= 500px) {
+    margin-left: var(--gap-sm);
+  }
 }
 
 .icon--next-triangle {
