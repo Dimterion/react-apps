@@ -28,11 +28,11 @@
   margin: auto;
   max-height: 768px;
   max-width: 1024px;
-  padding: 1rem 0.25rem;
+  padding: var(--gap-md) var(--gap-xs);
   width: 100%;
 
   @media (width >= 500px) {
-    padding: 1rem;
+    padding: var(--gap-md);
   }
 }
 
@@ -106,7 +106,7 @@
 }
 
 .camera-ui__resolution {
-  margin-left: 0.1rem;
+  margin-left: var(--gap-xs);
 }
 
 .camera-ui__group--right {
@@ -148,7 +148,7 @@
 
 .icon--record {
   height: var(--icon-size-md);
-  margin-right: 0.25rem;
+  margin-right: var(--gap-xs);
   width: var(--icon-size-md);
 
   @media (width >= 500px) {
@@ -215,7 +215,7 @@
 
 .icon--stop {
   height: var(--icon-size-md);
-  margin-right: 7px;
+  margin-right: var(--gap-sm);
   width: var(--icon-size-md);
 
   @media (width >= 500px) {
@@ -255,7 +255,7 @@
   border: 3px solid var(--color-overlay);
   display: flex;
   flex-wrap: nowrap;
-  padding: 3px;
+  padding: var(--gap-xs);
 }
 
 .icon--previous-triangle {
@@ -266,7 +266,7 @@
 .icon--play {
   height: var(--icon-size-md);
   margin-left: var(--gap-xs);
-  margin-right: 10px;
+  margin-right: var(--gap-sm);
   width: var(--icon-size-md);
 
   @media (width >= 500px) {
@@ -296,7 +296,7 @@
   border: 3px solid var(--color-overlay);
   display: flex;
   flex-wrap: nowrap;
-  padding: 3px;
+  padding: var(--gap-xs);
 }
 
 .icon--next-triangle {
