@@ -40,7 +40,7 @@ export default function CameraUiPage() {
               <span className="icon--tape-line" />
               <span className="icon--tape-circle" />
             </span>
-            <p className="status-row__text">54min</p>
+            <p className="camera-ui__time">54min</p>
           </div>
         </section>
       </section>
