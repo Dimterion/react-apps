@@ -7,13 +7,16 @@ body {
 
 .game-ui {
   background: gray;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-flow: column nowrap;
   height: 100vh;
   justify-content: space-between;
   margin: auto;
   width: 100vw;
+}
+
+.game-ui__top,
+.game-ui__bottom {
+  display: flex;
+  justify-content: space-between;
 }
