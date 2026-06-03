@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.game-ui {
+  background-image: url("../../assets/images/city-view-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: space-between;
+  margin: auto;
+  max-height: 768px;
+  max-width: 1024px;
+  padding: var(--gap-md) var(--gap-xs);
+  width: 100%;
+
+  @media (width >= 500px) {
+    padding: var(--gap-md);
+  }
+}
