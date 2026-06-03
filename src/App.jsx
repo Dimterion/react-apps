@@ -10,6 +10,7 @@ import NodeInterfacePage from "./pages/node-interface/node-interface";
 import QuizPage from "./pages/quiz/quiz";
 import ReignsPage from "./pages/reigns/reigns";
 import CameraUiPage from "./pages/camera-ui/camera-ui";
+import GameUiPage from "./pages/game-ui/game-ui";
 import NotFoundPage from "./pages/not-found";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/reigns" element={<ReignsPage />} />
         <Route path="/camera-ui" element={<CameraUiPage />} />
+        <Route path="/game-ui" element={<GameUiPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
