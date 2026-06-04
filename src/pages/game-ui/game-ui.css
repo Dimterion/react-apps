@@ -2,6 +2,7 @@
   /* Colors */
   --color-bg__main: #e0e1dd;
   --color-icon__main: #c1121f;
+  --color-icon__sub: #d4a373;
 }
 
 html,
@@ -32,4 +33,24 @@ body {
   background: var(--color-icon__main);
   height: 0.5rem;
   width: 0.5rem;
+}
+
+.game-ui__icon--bar {
+  background: var(--color-icon__main);
+  height: 0.5rem;
+  width: 10rem;
+}
+
+.game-ui__icon--route {
+  background: var(--color-icon__main);
+  height: 1rem;
+  rotate: 45deg;
+  width: 1rem;
+}
+
+.game-ui__icon--task {
+  background: var(--color-icon__sub);
+  height: 1rem;
+  rotate: 45deg;
+  width: 1rem;
 }

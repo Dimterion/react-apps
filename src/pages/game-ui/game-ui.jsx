@@ -5,13 +5,13 @@ export default function GameUiPage() {
     <main className="game-ui">
       <section className="game-ui__top">
         <section className="game-ui__group">
-          <div className="game-ui__icon"></div>
+          <div className="game-ui__icon game-ui__icon--bar"></div>
         </section>
         <section className="game-ui__group">
-          <div className="game-ui__icon"></div>
+          <div className="game-ui__icon game-ui__icon--route"></div>
         </section>
         <section className="game-ui__group">
-          <div className="game-ui__icon"></div>
+          <div className="game-ui__icon game-ui__icon--task"></div>
         </section>
       </section>
       <section className="game-ui__bottom">
