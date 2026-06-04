@@ -54,3 +54,23 @@ body {
   rotate: 45deg;
   width: 1rem;
 }
+
+.game-ui__icon--skill {
+  background: var(--color-icon__sub);
+  height: 2rem;
+  rotate: 45deg;
+  width: 2rem;
+}
+
+.game-ui__icon--resources {
+  background: var(--color-icon__sub);
+  height: 1.5rem;
+  rotate: 45deg;
+  width: 1.5rem;
+}
+
+.game-ui__icon-info {
+  background: var(--color-icon__sub);
+  height: 0.5rem;
+  width: 5rem;
+}
