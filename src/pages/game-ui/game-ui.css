@@ -1,3 +1,9 @@
+:root {
+  /* Colors */
+  --color-bg__main: #e0e1dd;
+  --color-icon__main: #c1121f;
+}
+
 html,
 body {
   margin: 0;
@@ -6,12 +12,13 @@ body {
 }
 
 .game-ui {
-  background: gray;
+  background: var(--color-bg__main);
   display: flex;
   flex-flow: column nowrap;
   height: 100vh;
   justify-content: space-between;
   margin: auto;
+  padding: 0.5rem;
   width: 100vw;
 }
 
@@ -19,4 +26,10 @@ body {
 .game-ui__bottom {
   display: flex;
   justify-content: space-between;
+}
+
+.game-ui__icon {
+  background: var(--color-icon__main);
+  height: 0.5rem;
+  width: 0.5rem;
 }

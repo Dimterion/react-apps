@@ -5,21 +5,24 @@ export default function GameUiPage() {
     <main className="game-ui">
       <section className="game-ui__top">
         <section className="game-ui__group">
-          <span className="game-ui__icon">A</span>
+          <div className="game-ui__icon"></div>
         </section>
         <section className="game-ui__group">
-          <span className="game-ui__icon">A</span>
+          <div className="game-ui__icon"></div>
+        </section>
+        <section className="game-ui__group">
+          <div className="game-ui__icon"></div>
         </section>
       </section>
       <section className="game-ui__bottom">
         <section className="game-ui__group">
-          <span className="game-ui__icon">A</span>
+          <div className="game-ui__icon"></div>
         </section>
         <section className="game-ui__group">
-          <span className="game-ui__icon">A</span>
+          <div className="game-ui__icon"></div>
         </section>
         <section className="game-ui__group">
-          <span className="game-ui__icon">A</span>
+          <div className="game-ui__icon"></div>
         </section>
       </section>
     </main>
