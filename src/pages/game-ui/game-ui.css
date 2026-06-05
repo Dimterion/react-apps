@@ -19,7 +19,7 @@ body {
   height: 100vh;
   justify-content: space-between;
   margin: auto;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 100vw;
 }
 
@@ -53,6 +53,18 @@ body {
   height: 1rem;
   rotate: 45deg;
   width: 1rem;
+}
+
+.game-ui__middle {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.game-ui__icon--party {
+  background: var(--color-icon__sub);
+  height: 1rem;
+  width: 5rem;
 }
 
 .game-ui__icon--skill {

@@ -191,7 +191,6 @@
   font-variant-numeric: slashed-zero;
   Fallback for older browsers:
   font-feature-settings: "zero";
-
   */
 
   @media (width >= 500px) {
