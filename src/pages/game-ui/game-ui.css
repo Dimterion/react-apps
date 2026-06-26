@@ -25,6 +25,7 @@ body {
 
 .game-ui__top,
 .game-ui__bottom {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -38,7 +39,7 @@ body {
 .game-ui__icon--bar {
   background: var(--color-icon__main);
   height: 0.5rem;
-  width: 10rem;
+  width: 5rem;
 }
 
 .game-ui__icon--route {
@@ -63,7 +64,7 @@ body {
 
 .game-ui__icon--party {
   background: var(--color-icon__sub);
-  height: 1rem;
+  height: 100%;
   width: 5rem;
 }
 

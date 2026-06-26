@@ -15,8 +15,8 @@ export default function GameUiPage() {
         </section>
       </section>
       <section className="game-ui__middle">
-        <div className="game-ui__icon game-ui__icon--party"></div>
-        <div className="game-ui__icon game-ui__icon--party"></div>
+        <div className="game-ui__icon game-ui__icon--party">Lorem</div>
+        <div className="game-ui__icon game-ui__icon--party">Ipsum</div>
       </section>
       <section className="game-ui__bottom">
         <section className="game-ui__group">
